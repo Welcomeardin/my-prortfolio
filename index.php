@@ -625,121 +625,109 @@
                 <div class="display" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">My <em style="color:[#C9996B];">Projects</em></div>
             </div>
 
-            <!-- SWIPER SLIDER -->
-            <div class="swiper projects-slider">
-                <div class="swiper-wrapper">
+            <!-- PROJECTS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                    <!-- PROJECT 1: LARAVEL WEB APP -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
-                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Laravel Web Application">
-                                <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                                    <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Laravel</span>
-                                    <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Full Stack</span>
-                                </div>
-                            </div>
-                            <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                                <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">E-Commerce Platform</div>
-                                <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Built a complete e-commerce platform with Laravel, MySQL, and Tailwind CSS. Features include user authentication, payment integration, and admin dashboard.</p>
-                                <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                                    <div style="display:flex;gap:0.5rem;">
-                                        <i class="fab fa-laravel" style="font-size:1.3rem;color:#FF2D20;" title="Laravel"></i>
-                                        <i class="fab fa-php" style="font-size:1.3rem;color:#777BB4;" title="PHP"></i>
-                                        <i class="fas fa-database" style="font-size:1.3rem;color:#4479A1;" title="MySQL"></i>
-                                    </div>
-                                    <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                        View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                                    </a>
-                                </div>
-                            </div>
+                <!-- PROJECT 1: LARAVEL WEB APP -->
+                <div class="card">
+                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Laravel Web Application">
+                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
+                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Laravel</span>
+                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Full Stack</span>
                         </div>
                     </div>
-
-                    <!-- PROJECT 2: REACT DASHBOARD -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="React Dashboard">
-                                <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                                    <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">React</span>
-                                    <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Dashboard</span>
-                                </div>
+                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
+                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">E-Commerce Platform</div>
+                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Built a complete e-commerce platform with Laravel, MySQL, and Tailwind CSS. Features include user authentication, payment integration, and admin dashboard.</p>
+                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
+                            <div style="display:flex;gap:0.5rem;">
+                                <i class="fab fa-laravel" style="font-size:1.3rem;color:#FF2D20;" title="Laravel"></i>
+                                <i class="fab fa-php" style="font-size:1.3rem;color:#777BB4;" title="PHP"></i>
+                                <i class="fas fa-database" style="font-size:1.3rem;color:#4479A1;" title="MySQL"></i>
                             </div>
-                            <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                                <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Analytics Dashboard</div>
-                                <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Developed a responsive analytics dashboard with React, Tailwind CSS, and Chart.js. Features real-time data visualization and interactive components.</p>
-                                <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                                    <div style="display:flex;gap:0.5rem;">
-                                        <i class="fab fa-react" style="font-size:1.3rem;color:#61DAFB;" title="React"></i>
-                                        <i class="fab fa-js" style="font-size:1.3rem;color:#F7DF1E;" title="JavaScript"></i>
-                                        <i class="fas fa-wind" style="font-size:1.3rem;color:#06B6D4;" title="Tailwind CSS"></i>
-                                    </div>
-                                    <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                        View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                                    </a>
-                                </div>
-                            </div>
+                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
+                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- PROJECT 3: PORTFOLIO WEBSITE -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Portfolio Website">
-                                <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                                    <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">HTML/CSS</span>
-                                    <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Responsive</span>
-                                </div>
-                            </div>
-                            <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                                <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Personal Portfolio</div>
-                                <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Created a modern, responsive portfolio website using HTML, CSS, Bootstrap, and JavaScript. Features smooth animations and mobile-first design.</p>
-                                <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                                    <div style="display:flex;gap:0.5rem;">
-                                        <i class="fab fa-html5" style="font-size:1.3rem;color:#E34C26;" title="HTML5"></i>
-                                        <i class="fab fa-css3-alt" style="font-size:1.3rem;color:#1572B6;" title="CSS3"></i>
-                                        <i class="fab fa-bootstrap" style="font-size:1.3rem;color:#7952B3;" title="Bootstrap"></i>
-                                    </div>
-                                    <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                        View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT 4: CI/CD PIPELINE -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
-                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="CI/CD Pipeline">
-                                <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                                    <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">DevOps</span>
-                                    <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">CI/CD</span>
-                                </div>
-                            </div>
-                            <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                                <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Automated CI/CD Pipeline</div>
-                                <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Implemented a complete CI/CD pipeline using GitHub Actions. Features automated testing, deployment staging, and production releases with rollback capabilities.</p>
-                                <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                                    <div style="display:flex;gap:0.5rem;">
-                                        <i class="fab fa-github" style="font-size:1.3rem;color:#181717;" title="GitHub"></i>
-                                        <i class="fas fa-infinity" style="font-size:1.3rem;color:#FF6B35;" title="CI/CD"></i>
-                                        <i class="fab fa-docker" style="font-size:1.3rem;color:#2496ED;" title="Docker"></i>
-                                    </div>
-                                    <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                        View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+
+                <!-- PROJECT 2: REACT DASHBOARD -->
+                <div class="card">
+                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="React Dashboard">
+                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
+                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">React</span>
+                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Dashboard</span>
+                        </div>
+                    </div>
+                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
+                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Analytics Dashboard</div>
+                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Developed a responsive analytics dashboard with React, Tailwind CSS, and Chart.js. Features real-time data visualization and interactive components.</p>
+                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
+                            <div style="display:flex;gap:0.5rem;">
+                                <i class="fab fa-react" style="font-size:1.3rem;color:#61DAFB;" title="React"></i>
+                                <i class="fab fa-js" style="font-size:1.3rem;color:#F7DF1E;" title="JavaScript"></i>
+                                <i class="fas fa-wind" style="font-size:1.3rem;color:#06B6D4;" title="Tailwind CSS"></i>
+                            </div>
+                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
+                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: PORTFOLIO WEBSITE -->
+                <div class="card">
+                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Portfolio Website">
+                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
+                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">HTML/CSS</span>
+                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Responsive</span>
+                        </div>
+                    </div>
+                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
+                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Personal Portfolio</div>
+                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Created a modern, responsive portfolio website using HTML, CSS, Bootstrap, and JavaScript. Features smooth animations and mobile-first design.</p>
+                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
+                            <div style="display:flex;gap:0.5rem;">
+                                <i class="fab fa-html5" style="font-size:1.3rem;color:#E34C26;" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" style="font-size:1.3rem;color:#1572B6;" title="CSS3"></i>
+                                <i class="fab fa-bootstrap" style="font-size:1.3rem;color:#7952B3;" title="Bootstrap"></i>
+                            </div>
+                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
+                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4 CI/CD PIPELINE -->
+                <div class="card">
+                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="CI/CD Pipeline">
+                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
+                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">DevOps</span>
+                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">CI/CD</span>
+                        </div>
+                    </div>
+                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
+                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Automated CI/CD Pipeline</div>
+                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Implemented a complete CI/CD pipeline using GitHub Actions. Features automated testing, deployment staging, and production releases with rollback capabilities.</p>
+                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
+                            <div style="display:flex;gap:0.5rem;">
+                                <i class="fab fa-github" style="font-size:1.3rem;color:#181717;" title="GitHub"></i>
+                                <i class="fas fa-infinity" style="font-size:1.3rem;color:#FF6B35;" title="CI/CD"></i>
+                                <i class="fab fa-docker" style="font-size:1.3rem;color:#2496ED;" title="Docker"></i>
+                            </div>
+                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
+                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div style="text-align:center;margin-top:2.5rem;">
