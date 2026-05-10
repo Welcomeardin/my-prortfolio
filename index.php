@@ -483,12 +483,12 @@
                 </div>
               </div>
 
-              <!-- Badges -->
+              <!-- Badges
               <div class="flex flex-wrap gap-2">
                 <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">TAILWIND CSS</span>
                 <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">REACT</span>
                 <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">FIGMA</span>
-              </div>
+              </div> -->
             </div>
 
             <!-- Right Column - Image -->
