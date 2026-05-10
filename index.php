@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Lionel Kubwimana · Software Engineer & AI Product Builder</title>
+  <title>Welcome Ardin · Web Designer & Developer</title>
   <!-- Tailwind CSS + Google Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -108,16 +108,17 @@
 
         <!-- LOGO/BRAND -->
         <div class="flex items-center gap-2 relative z-10">
-          <div class="w-10 h-10 bg-[#5C766D] rounded-full flex items-center justify-center text-white font-bold text-sm">LK</div>
-          <span class="hidden sm:inline font-bold text-[#5C4F4A] text-sm">Lionel</span>
+          <div class="w-10 h-10 bg-[#5C766D] rounded-full flex items-center justify-center text-white font-bold text-sm">WA</div>
+          <span class="hidden sm:inline font-bold text-[#5C4F4A] text-sm">Ardin</span>
         </div>
 
         <!-- NAVIGATION BUTTONS -->
         <div class="flex items-center gap-3 md:gap-6 relative z-10">
-          <a href="#" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Home</a>
-          <a href="#" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
-          <a href="#" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Blog</a>
-          <a href="#" class="px-5 py-2 bg-[#5C766D] text-white rounded-full text-sm font-semibold hover:bg-[#4a625a] transition duration-200">Hire me</a>
+          <a href="index.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Home</a>
+          <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
+          <a href="skills.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Skills</a>
+          <a href="work.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Work</a>
+          <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-full text-sm font-semibold hover:bg-[#4a625a] transition duration-200">Hire me</a>
         </div>
 
         <!-- RIGHT LINE -->
@@ -126,11 +127,11 @@
     </nav>
 
     <!-- ========== HERO SECTION: Umuzi inspired + medium centered image ========== -->
-    <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-12 lg:gap-8">
+    <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-12 lg:gap-8 py-20 lg:py-28">
       <!-- LEFT IMAGE: smaller, centered -->
       <div class="lg:w-1/3 w-1/2 mx-auto lg:mx-0 relative">
-        <div class="h-[300px] lg:h-[360px] w-full bg-cover bg-center bg-no-repeat  overflow-hidden shadow-lg"
-          style="background-image: url('avatar.jpeg'); background-size: cover;">
+        <div class="h-[250px] lg:h-[300px] w-full bg-cover bg-center bg-no-repeat  overflow-hidden shadow-lg"
+          style="background-image: url('avatar.jpeg'); background-size: cover; background-position: center; border-radius: 100px;">
           <div class="w-full h-full bg-gradient-to-r from-[#5C766D]/20 via-transparent to-transparent"></div>
         </div>
       </div>
@@ -143,19 +144,19 @@
             <span class="text-[#5C766D] text-sm uppercase tracking-[0.2em] font-semibold">AI Product Engineer</span>
           </div>
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#5C4F4A] leading-[1.15]">
-            Lionel Kubwimana
+            Welcome Ardin
           </h1>
           <p class="text-xl md:text-2xl text-[#5C4F4A]/85 mt-5 font-medium border-l-4 border-[#C9996B] pl-6">
-            Software Engineer & AI Product Builder
+            Web Designer & Developer
           </p>
           <p class="text-[#5C4F4A]/70 mt-6 text-lg leading-relaxed max-w-md">
-            Building useful products for African languages & communities. Documenting my journey with OpenClaw — where AI meets practical automation.
+            Creating beautiful and functional websites for clients around the world. Documenting my journey with OpenClaw — where AI meets practical automation.
           </p>
           <div class="flex flex-wrap gap-5 mt-10">
-            <a href="#" class="group inline-flex items-center gap-2 px-8 py-3.5 bg-[#5C766D] text-white font-semibold rounded-full shadow-md hover:bg-[#4a625a] transition-all duration-200 btn-pulse">
+            <a href="work.php" class="group inline-flex items-center gap-2 px-8 py-3.5 bg-[#5C766D] text-white font-semibold rounded-full shadow-md hover:bg-[#4a625a] transition-all duration-200 btn-pulse">
               Explore work <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition"></i>
             </a>
-            <a href="#" class="inline-flex items-center gap-2 px-7 py-3.5 bg-white/80 backdrop-blur-sm text-[#5C4F4A] font-medium rounded-full border border-[#C9996B]/40 hover:bg-white hover:shadow-sm transition">
+            <a href="https://github.com/Welcomeardin" class="inline-flex items-center gap-2 px-7 py-3.5 bg-white/80 backdrop-blur-sm text-[#5C4F4A] font-medium rounded-full border border-[#C9996B]/40 hover:bg-white hover:shadow-sm transition">
               <i class="fab fa-github"></i> GitHub
             </a>
           </div>
