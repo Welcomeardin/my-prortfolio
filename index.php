@@ -508,21 +508,15 @@
     </div>
 
     <!-- ========== SKILLS SECTION ========== -->
-    <div class="py-20 lg:py-28 bg-[#EDE9E6]">
+    <div class="py-20 lg:py-28 bg-[#EDE9E6] border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
       <div>
         <!-- Dashed line separator -->
         <div class="flex items-center justify-center mb-12">
-          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-[#C9996B] to-transparent"></div>
           <span class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">Skills I Have</span>
-          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-[#C9996B] to-transparent"></div>
         </div>
 
         <!-- section header -->
         <div class="text-center mb-16">
-          <div class="inline-flex items-center gap-2 mb-4">
-            <i class="fas fa-code text-[#C9996B] text-xl"></i>
-            <span class="text-[#5C766D] text-sm font-bold uppercase tracking-wider">Technical Expertise</span>
-          </div>
           <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">My <em class="text-[#C9996B]">Technical</em> Stack</h2>
         </div>
 
