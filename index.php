@@ -175,7 +175,7 @@
       <!-- LEFT IMAGE: smaller, centered -->
       <div class="lg:w-1/4 w-2/5 mx-auto lg:mx-0 lg:ml-8 relative rounded-full">
         <div class="w-full aspect-square bg-cover bg-center bg-no-repeat overflow-hidden shadow-lg rounded-full"
-          style="background-image: url('avatar.jpeg'); background-size: cover; background-position: center;">
+          style="background-image: url('img/me.jpg'); background-size: cover; background-position: center;">
           <div class="w-full h-full bg-gradient-to-r from-[#5C766D]/20 via-transparent to-transparent"></div>
         </div>
       </div>
