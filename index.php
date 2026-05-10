@@ -112,8 +112,15 @@
           <span class="hidden sm:inline font-bold text-[#5C4F4A] text-sm">Ardin</span>
         </div>
 
-        <!-- NAVIGATION BUTTONS -->
-        <div class="flex items-center gap-3 md:gap-6 relative z-10">
+        <!-- HAMBURGER MENU BUTTON (Mobile) -->
+        <button id="menu-toggle" class="md:hidden relative z-20 flex items-center justify-center w-10 h-10">
+          <svg class="w-6 h-6 text-[#5C4F4A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- NAVIGATION BUTTONS (Desktop) -->
+        <div id="nav-menu" class="hidden md:flex items-center gap-3 md:gap-6 relative z-10">
           <a href="index.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Home</a>
           <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
           <a href="skills.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Skills</a>
@@ -121,17 +128,54 @@
           <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-full text-sm font-semibold hover:bg-[#4a625a] transition duration-200">Hire me</a>
         </div>
 
+        <!-- MOBILE MENU (Dropdown) -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-[#EDE9E6]/98 backdrop-blur-sm border-b border-[#C9996B]/20 md:hidden">
+          <div class="px-8 py-4 flex flex-col gap-4">
+            <a href="index.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Home</a>
+            <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
+            <a href="skills.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Skills</a>
+            <a href="work.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Work</a>
+            <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-full text-sm font-semibold hover:bg-[#4a625a] transition duration-200 text-center">Hire me</a>
+          </div>
+        </div>
+
         <!-- RIGHT LINE -->
         <div class="absolute right-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-gradient-to-l from-transparent to-[#C9996B]"></div>
       </div>
     </nav>
 
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = menuToggle.querySelector('svg');
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        
+        // Rotate hamburger icon
+        if (mobileMenu.classList.contains('hidden')) {
+          menuIcon.style.transform = 'rotate(0deg)';
+        } else {
+          menuIcon.style.transform = 'rotate(90deg)';
+        }
+      });
+
+      // Close menu when a link is clicked
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.style.transform = 'rotate(0deg)';
+        });
+      });
+    </script>
+
     <!-- ========== HERO SECTION: Umuzi inspired + medium centered image ========== -->
     <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-12 lg:gap-8 py-20 lg:py-28">
       <!-- LEFT IMAGE: smaller, centered -->
-      <div class="lg:w-1/3 w-1/2 mx-auto lg:mx-0 relative">
-        <div class="h-[250px] lg:h-[300px] w-full bg-cover bg-center bg-no-repeat  overflow-hidden shadow-lg"
-          style="background-image: url('avatar.jpeg'); background-size: cover; background-position: center; border-radius: 100px;">
+      <div class="lg:w-1/3 w-1/2 mx-auto lg:mx-0 relative rounded-full">
+        <div class="h-[250px] lg:h-[300px] w-full bg-cover bg-center bg-no-repeat overflow-hidden shadow-lg rounded-full"
+          style="background-image: url('avatar.jpeg'); background-size: cover; background-position: center;">
           <div class="w-full h-full bg-gradient-to-r from-[#5C766D]/20 via-transparent to-transparent"></div>
         </div>
       </div>
@@ -140,7 +184,7 @@
       <div class="lg:w-3/5 w-full px-8 md:px-12 py-8 lg:py-0 flex flex-col justify-center bg-[#EDE9E6] relative">
         <div class="max-w-xl mx-auto lg:mx-0">
           <div class="inline-flex items-center gap-2 mb-2 mt-3">
-            <!-- <span class="w-10 h-[2px] bg-[#C9996B]"></span> -->
+            <span class="w-10 h-[2px] bg-[#C9996B]"></span>
             <span class="text-[#5C766D] text-sm uppercase tracking-[0.2em] font-semibold">AI Product Engineer</span>
           </div>
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#5C4F4A] leading-[1.15]">
