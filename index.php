@@ -710,6 +710,33 @@
                         </div>
                     </div>
 
+                    <!-- PROJECT 4: CI/CD PIPELINE -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="CI/CD Pipeline">
+                                <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
+                                    <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">DevOps</span>
+                                    <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">CI/CD</span>
+                                </div>
+                            </div>
+                            <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
+                                <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Automated CI/CD Pipeline</div>
+                                <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Implemented a complete CI/CD pipeline using GitHub Actions. Features automated testing, deployment staging, and production releases with rollback capabilities.</p>
+                                <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
+                                    <div style="display:flex;gap:0.5rem;">
+                                        <i class="fab fa-github" style="font-size:1.3rem;color:#181717;" title="GitHub"></i>
+                                        <i class="fas fa-infinity" style="font-size:1.3rem;color:#FF6B35;" title="CI/CD"></i>
+                                        <i class="fab fa-docker" style="font-size:1.3rem;color:#2496ED;" title="Docker"></i>
+                                    </div>
+                                    <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
+                                        View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- Pagination -->
                 <div class="swiper-pagination"></div>
