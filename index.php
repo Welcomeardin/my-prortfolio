@@ -541,34 +541,34 @@
               <div class="orbit-pod" style="top:0%;left:50%;">
                 <i class="fab fa-laravel" style="color:#FF2D20;"></i>
               </div>
-              <div class="orbit-pod" style="top:0%;left:50%;">
+              <div class="orbit-pod" style="top:16%;left:85%;">
                 <i class="fab fa-react" style="color:#61DAFB;"></i>
               </div>
-              <div class="orbit-pod" style="top:0%;left:50%;">
+              <div class="orbit-pod" style="top:50%;left:95%;">
                 <i class="fab fa-html5" style="color:#E34C26;"></i>
               </div>
-              <div class="orbit-pod" style="top:80%;left:85%;">
+              <div class="orbit-pod" style="top:84%;left:85%;">
                 <i class="fas fa-wind" style="color:#06B6D4;"></i>
               </div>
-              <div class="orbit-pod" style="top:95%;left:50%;">
+              <div class="orbit-pod" style="top:100%;left:50%;">
                 <i class="fab fa-bootstrap" style="color:#7952B3;"></i>
               </div>
-              <div class="orbit-pod" style="top:80%;left:15%;">
+              <div class="orbit-pod" style="top:84%;left:15%;">
                 <i class="fab fa-css3-alt" style="color:#1572B6;"></i>
               </div>
               <div class="orbit-pod" style="top:50%;left:5%;">
                 <i class="fab fa-github" style="color:#181717;"></i>
               </div>
-              <div class="orbit-pod" style="top:20%;left:15%;">
+              <div class="orbit-pod" style="top:16%;left:15%;">
                 <i class="fab fa-php" style="color:#777BB4;"></i>
               </div>
-              <div class="orbit-pod" style="top:35%;left:50%;">
+              <div class="orbit-pod" style="top:30%;left:50%;">
                 <i class="fas fa-database" style="color:#4479A1;"></i>
               </div>
-              <div class="orbit-pod" style="top:65%;left:50%;">
+              <div class="orbit-pod" style="top:70%;left:50%;">
                 <i class="fas fa-infinity" style="color:#FF6B35;"></i>
               </div>
-              <div class="orbit-pod" style="top:10%;left:30%;">
+              <div class="orbit-pod" style="top:8%;left:30%;">
                 <i class="fab fa-js" style="color:#F7DF1E;"></i>
               </div>
             </div>
