@@ -547,9 +547,9 @@
               <div class="orbit-pod" style="top:50%;left:95%;">
                 <i class="fab fa-html5" style="color:#E34C26;"></i>
               </div>
-              <div class="orbit-pod" style="top:84%;left:85%;">
+              <!-- <div class="orbit-pod" style="top:84%;left:85%;">
                 <i class="fas fa-wind" style="color:#06B6D4;"></i>
-              </div>
+              </div> -->
               <div class="orbit-pod" style="top:100%;left:50%;">
                 <i class="fab fa-bootstrap" style="color:#7952B3;"></i>
               </div>
