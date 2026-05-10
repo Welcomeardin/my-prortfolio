@@ -541,10 +541,10 @@
               <div class="orbit-pod" style="top:0%;left:50%;">
                 <i class="fab fa-laravel" style="color:#FF2D20;"></i>
               </div>
-              <div class="orbit-pod" style="top:20%;left:85%;">
+              <div class="orbit-pod" style="top:0%;left:50%;">
                 <i class="fab fa-react" style="color:#61DAFB;"></i>
               </div>
-              <div class="orbit-pod" style="top:50%;left:95%;">
+              <div class="orbit-pod" style="top:0%;left:50%;">
                 <i class="fab fa-html5" style="color:#E34C26;"></i>
               </div>
               <div class="orbit-pod" style="top:80%;left:85%;">
