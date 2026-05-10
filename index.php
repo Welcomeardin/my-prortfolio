@@ -271,75 +271,85 @@
       </div>
     </div>
 
-    <!-- ========== TWO COLUMN POSTS SECTION (blog preview with "view more" button, modern cards) ========== -->
+    <!-- ========== ABOUT SECTION ========== -->
     <div class="py-20 lg:py-28 bg-[#EDE9E6]">
       <div>
-        <!-- section header inspired by Umuzi "comment nous faisons passer vos idées" vibe -->
+        <!-- section header -->
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-[#C9996B]/30 pb-7 mb-12">
           <div>
             <div class="flex items-center gap-2 mb-2">
               <i class="fas fa-pen-fade text-[#C9996B] text-xl"></i>
-              <span class="text-[#5C766D] text-sm font-bold uppercase tracking-wider">Latest stories</span>
+              <span class="text-[#5C766D] text-sm font-bold uppercase tracking-wider">What I Do</span>
             </div>
-            <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">From the dev log</h2>
-            <p class="text-[#5C4F4A]/70 mt-2 max-w-xl">Automation, AI agents, and real-world lessons from building OpenClaw.</p>
-          </div>
-          <a href="#" class="text-[#C9996B] font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-200 group">
-            <span>All posts</span> <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
-          </a>
-        </div>
-
-        <!-- TABLE-LIKE POSTS LAYOUT -->
-        <div class="space-y-0">
-          <!-- Post 1 -->
-          <div class="border-b border-dashed border-[#C9996B]/40 py-6">
-            <div class="flex justify-between items-start mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-[#5C4F4A] leading-tight">How Our AI Automation Silently Burned $10/month in Tokens – and How We Fixed It</h3>
-                <p class="text-[#5C4F4A]/70 mt-2 text-sm">Unexpected token drain taught us critical lessons about monitoring agent loops. Diagnosis, real-time alerts, and cost optimization.</p>
-              </div>
-              <a href="#" class="text-[#C9996B] font-semibold text-sm hover:text-[#5C766D] transition whitespace-nowrap ml-4">Read →</a>
-            </div>
-            <div class="text-xs text-[#5C766D] font-semibold">Apr 21, 2026 · 5 min read</div>
-          </div>
-
-          <!-- Post 2 -->
-          <div class="border-b border-dashed border-[#C9996B]/40 py-6">
-            <div class="flex justify-between items-start mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-[#5C4F4A] leading-tight">Extending open‑source agent automation to multiple repositories</h3>
-                <p class="text-[#5C4F4A]/70 mt-2 text-sm">Scaling autonomous AI workflows across codebases without losing context, using OpenClaw orchestration.</p>
-              </div>
-              <a href="#" class="text-[#C9996B] font-semibold text-sm hover:text-[#5C766D] transition whitespace-nowrap ml-4">Learn →</a>
-            </div>
-            <div class="text-xs text-[#5C766D] font-semibold">Apr 21, 2026 · 4 min read</div>
-          </div>
-
-          <!-- Post 3 -->
-          <div class="border-b border-dashed border-[#C9996B]/40 py-6">
-            <div class="flex justify-between items-start mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-[#5C4F4A] leading-tight">Why We Skipped OpenRouter & Stick With DeepSeek‑v3.2</h3>
-                <p class="text-[#5C4F4A]/70 mt-2 text-sm">Performance, cost control, and reliability — the rationale behind our direct DeepSeek integration for agent workflows.</p>
-              </div>
-              <a href="#" class="text-[#C9996B] font-semibold text-sm hover:text-[#5C766D] transition whitespace-nowrap ml-4">View →</a>
-            </div>
-            <div class="text-xs text-[#5C766D] font-semibold">Apr 20, 2026 · 3 min read</div>
-          </div>
-
-          <!-- Post 4 -->
-          <div class="border-b border-dashed border-[#C9996B]/40 py-6">
-            <div class="flex justify-between items-start mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-[#5C4F4A] leading-tight">Automating Our AI Team: Self-Assigning Workflow with OpenClaw Cron</h3>
-                <p class="text-[#5C4F4A]/70 mt-2 text-sm">Building a fully autonomous agent that assigns itself tasks using cron schedules — zero human intervention.</p>
-              </div>
-              <a href="#" class="text-[#C9996B] font-semibold text-sm hover:text-[#5C766D] transition whitespace-nowrap ml-4">Read →</a>
-            </div>
-            <div class="text-xs text-[#5C766D] font-semibold">Apr 19, 2026 · 6 min read</div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">About Me</h2>
+            <p class="text-[#5C4F4A]/70 mt-2 max-w-xl">I'm a passionate web designer and developer with a focus on creating beautiful, functional, and user-centered digital experiences.</p>
           </div>
         </div>
 
+        <!-- ABOUT CONTENT -->
+        <section class="py-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Column - Text -->
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-[#5C4F4A] mb-4">
+                Designing & Building<br><em class="text-[#C9996B]">Digital Experiences</em>
+              </h3>
+              <p class="text-[#5C4F4A]/80 leading-relaxed mb-4 text-lg">
+                I'm a web designer and developer specializing in creating beautiful, responsive websites and applications that solve real problems. With a keen eye for design and strong development skills, I bridge the gap between aesthetics and functionality.
+              </p>
+              <p class="text-[#5C4F4A]/80 leading-relaxed mb-6 text-lg">
+                I work with brands and businesses to create digital products that are not just visually stunning, but also intuitive and performant. From concept to deployment, I ensure every project meets the highest standards.
+              </p>
+
+              <!-- Services/Skills Grid -->
+              <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check text-[#5C766D] font-bold"></i>
+                  <span class="text-[#5C4F4A] font-medium text-sm">UI/UX Design</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check text-[#5C766D] font-bold"></i>
+                  <span class="text-[#5C4F4A] font-medium text-sm">Web Development</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check text-[#5C766D] font-bold"></i>
+                  <span class="text-[#5C4F4A] font-medium text-sm">Responsive Design</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check text-[#5C766D] font-bold"></i>
+                  <span class="text-[#5C4F4A] font-medium text-sm">Frontend Development</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check text-[#5C766D] font-bold"></i>
+                  <span class="text-[#5C4F4A] font-medium text-sm">Performance Optimization</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check text-[#5C766D] font-bold"></i>
+                  <span class="text-[#5C4F4A] font-medium text-sm">Brand Integration</span>
+                </div>
+              </div>
+
+              <!-- Badges -->
+              <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">TAILWIND CSS</span>
+                <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">REACT</span>
+                <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">FIGMA</span>
+              </div>
+            </div>
+
+            <!-- Right Column - Image -->
+            <div class="relative">
+              <div class="bg-[#EDE9E6] rounded-lg overflow-hidden shadow-lg border border-[#C9996B]/10">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" 
+                     class="w-full h-full object-cover" 
+                     alt="Web Design and Development">
+              </div>
+              <div class="absolute -bottom-4 -left-4 bg-white border border-[#C9996B]/20 rounded-lg p-4 shadow-lg">
+                <p class="font-bold text-[#5C766D] text-sm">"Design is not just what it looks like."</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
