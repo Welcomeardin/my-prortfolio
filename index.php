@@ -218,53 +218,53 @@
           <div class="marquee">
             <!-- Imuhira -->
             <div class="marquee-item">
-              <img src="img/imuhira-logo.png" alt="Imuhira" class="h-16 object-contain">
+              <img src="img/imuhira.jpg" alt="Imuhira" class="h-16 object-contain">
             </div>
 
             <!-- Add your client logos here -->
             <div class="marquee-item">
-              <img src="img/client-logo-1.png" alt="Client 1" class="h-16 object-contain">
+              <img src="img/zawatu.png" alt="Client 1" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-2.png" alt="Client 2" class="h-16 object-contain">
+              <img src="img/duka-link.jpg" alt="Client 2" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-3.png" alt="Client 3" class="h-16 object-contain">
+              <img src="img/easymanager.png" alt="Client 3" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-4.png" alt="Client 4" class="h-16 object-contain">
+              <img src="img/imuhira.jpg" alt="Client 4" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-5.png" alt="Client 5" class="h-16 object-contain">
+              <img src="img/zawatu.png" alt="Client 5" class="h-16 object-contain">
             </div>
 
             <!-- Duplicate for seamless loop -->
             <div class="marquee-item">
-              <img src="img/imuhira-logo.png" alt="Imuhira" class="h-16 object-contain">
+              <img src="img/imuhira.jpg" alt="Imuhira" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-1.png" alt="Client 1" class="h-16 object-contain">
+              <img src="img/zawatu.png" alt="Client 1" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-2.png" alt="Client 2" class="h-16 object-contain">
+              <img src="img/duka-link.jpg" alt="Client 2" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-3.png" alt="Client 3" class="h-16 object-contain">
+              <img src="img/easymanager.png" alt="Client 3" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-4.png" alt="Client 4" class="h-16 object-contain">
+              <img src="img/imuhira.jpg" alt="Client 4" class="h-16 object-contain">
             </div>
 
             <div class="marquee-item">
-              <img src="img/client-logo-5.png" alt="Client 5" class="h-16 object-contain">
+              <img src="img/zawatu.png" alt="Client 5" class="h-16 object-contain">
             </div>
           </div>
         </div>
