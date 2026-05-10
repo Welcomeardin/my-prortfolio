@@ -836,6 +836,54 @@
       </div>
     </footer>
   </main>
+
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      return false;
+    });
+
+    // Disable text selection
+    document.addEventListener('selectstart', function(e) {
+      e.preventDefault();
+      return false;
+    });
+
+    // Disable drag
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+      return false;
+    });
+
+    // Disable F12, Ctrl+U, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+    document.addEventListener('keydown', function(e) {
+      if (e.keyCode === 123 || // F12
+          (e.ctrlKey && e.keyCode === 85) || // Ctrl+U
+          (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+          (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+          (e.ctrlKey && e.shiftKey && e.keyCode === 67)) { // Ctrl+Shift+C
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    });
+
+    // Disable view source via Ctrl+U in all browsers
+    document.onkeydown = function(e) {
+      if (e.ctrlKey && e.keyCode === 85) {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    // Clear console on load
+    console.clear();
+    console.log('%c⚠️ WARNING! ⚠️', 'color: red; font-size: 20px; font-weight: bold;');
+    console.log('%cThis is a browser feature intended for developers. Viewing or copying this code is prohibited.', 'color: red; font-size: 14px;');
+    console.log('%c© 2026 Welcome Ardin - All Rights Reserved', 'color: #5C766D; font-size: 12px; font-weight: bold;');
+  </script>
+
 </body>
 
 </html>
