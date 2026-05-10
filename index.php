@@ -93,6 +93,160 @@
       align-items: center;
       gap: 1rem;
     }
+
+    /* Skills Orbit Animation */
+    .skills-orbit-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1/1;
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .orbit-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 1px solid rgba(201, 153, 107, 0.1);
+    }
+
+    .orbit-ring-outer {
+      width: 100%;
+      height: 100%;
+    }
+
+    .orbit-ring-accent {
+      width: 75%;
+      height: 75%;
+      border: 2px dashed #C9996B;
+      opacity: 0.3;
+    }
+
+    .orbit-ring-inner {
+      width: 50%;
+      height: 50%;
+    }
+
+    .orbit-spin {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: orbitSpin 40s linear infinite;
+    }
+
+    .orbit-pod {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(92, 79, 74, 0.1);
+      border: 2px solid #C9996B;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease;
+    }
+
+    .orbit-pod:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+      box-shadow: 0 12px 35px rgba(201, 153, 107, 0.3);
+      z-index: 10;
+    }
+
+    .orbit-pod i {
+      font-size: 1.8rem;
+      color: #5C766D;
+      animation: orbitCounterSpin 40s linear infinite;
+    }
+
+    .orbit-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 100px;
+      height: 100px;
+      background: #5C766D;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 15px 40px rgba(92, 118, 109, 0.2);
+      border: 3px solid #C9996B;
+    }
+
+    .orbit-center-inner {
+      color: white;
+      font-family: 'Century Gothic', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    @keyframes orbitSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes orbitCounterSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+
+    .skills-split-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+      .skills-split-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+      }
+    }
+
+    .skill-desc-block {
+      margin-bottom: 2rem;
+    }
+
+    .skill-desc-title {
+      font-family: 'Century Gothic', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #5C766D;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .skill-desc-title i {
+      color: #C9996B;
+      font-size: 1.3rem;
+    }
+
+    .skill-desc-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #5C4F4A;
+      border-left: 3px solid #C9996B;
+      padding-left: 1.5rem;
+      margin-left: 0.5rem;
+    }
   </style>
 </head>
 
@@ -353,6 +507,118 @@
       </div>
     </div>
 
+    <!-- ========== SKILLS SECTION ========== -->
+    <div class="py-20 lg:py-28 bg-[#EDE9E6]">
+      <div>
+        <!-- Dashed line separator -->
+        <div class="flex items-center justify-center mb-12">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-[#C9996B] to-transparent"></div>
+          <span class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">Skills I Have</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-[#C9996B] to-transparent"></div>
+        </div>
+
+        <!-- section header -->
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <i class="fas fa-code text-[#C9996B] text-xl"></i>
+            <span class="text-[#5C766D] text-sm font-bold uppercase tracking-wider">Technical Expertise</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">My <em class="text-[#C9996B]">Technical</em> Stack</h2>
+        </div>
+
+        <div class="skills-split-container">
+          <!-- LEFT: Visual Orbit -->
+          <div class="skills-orbit-container">
+            <div class="orbit-ring orbit-ring-outer"></div>
+            <div class="orbit-ring orbit-ring-accent"></div>
+            <div class="orbit-ring orbit-ring-inner"></div>
+
+            <div class="orbit-center">
+              <div class="orbit-center-inner">SKILLS</div>
+            </div>
+
+            <div class="orbit-spin">
+              <div class="orbit-pod" style="top:0%;left:50%;">
+                <i class="fab fa-laravel" style="color:#FF2D20;"></i>
+              </div>
+              <div class="orbit-pod" style="top:20%;left:85%;">
+                <i class="fab fa-react" style="color:#61DAFB;"></i>
+              </div>
+              <div class="orbit-pod" style="top:50%;left:95%;">
+                <i class="fab fa-html5" style="color:#E34C26;"></i>
+              </div>
+              <div class="orbit-pod" style="top:80%;left:85%;">
+                <i class="fas fa-wind" style="color:#06B6D4;"></i>
+              </div>
+              <div class="orbit-pod" style="top:95%;left:50%;">
+                <i class="fab fa-bootstrap" style="color:#7952B3;"></i>
+              </div>
+              <div class="orbit-pod" style="top:80%;left:15%;">
+                <i class="fab fa-css3-alt" style="color:#1572B6;"></i>
+              </div>
+              <div class="orbit-pod" style="top:50%;left:5%;">
+                <i class="fab fa-github" style="color:#181717;"></i>
+              </div>
+              <div class="orbit-pod" style="top:20%;left:15%;">
+                <i class="fab fa-php" style="color:#777BB4;"></i>
+              </div>
+              <div class="orbit-pod" style="top:35%;left:50%;">
+                <i class="fas fa-database" style="color:#4479A1;"></i>
+              </div>
+              <div class="orbit-pod" style="top:65%;left:50%;">
+                <i class="fas fa-infinity" style="color:#FF6B35;"></i>
+              </div>
+              <div class="orbit-pod" style="top:10%;left:30%;">
+                <i class="fab fa-js" style="color:#F7DF1E;"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Technical Descriptions -->
+          <div class="skills-expertise">
+            <div class="skill-desc-block">
+              <div class="skill-desc-title">
+                <i class="fas fa-layer-group"></i>
+                Frontend Development
+              </div>
+              <div class="skill-desc-text">
+                Building responsive, interactive user interfaces with React, HTML, CSS, and modern frameworks like Tailwind CSS and Bootstrap.
+              </div>
+            </div>
+
+            <div class="skill-desc-block">
+              <div class="skill-desc-title">
+                <i class="fas fa-server"></i>
+                Backend Development
+              </div>
+              <div class="skill-desc-text">
+                Creating robust server-side applications with PHP and Laravel, managing databases with MySQL, and implementing RESTful APIs.
+              </div>
+            </div>
+
+            <div class="skill-desc-block">
+              <div class="skill-desc-title">
+                <i class="fas fa-code-branch"></i>
+                Version Control
+              </div>
+              <div class="skill-desc-text">
+                Managing code versions and collaboration using Git and GitHub, ensuring clean, maintainable codebases for team projects.
+              </div>
+            </div>
+
+            <div class="skill-desc-block">
+              <div class="skill-desc-title">
+                <i class="fas fa-rocket"></i>
+                DevOps & CI/CD
+              </div>
+              <div class="skill-desc-text">
+                Implementing continuous integration and deployment pipelines to automate testing, building, and deployment processes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ========== CONTACT & CTA SECTION ========== -->
     <div class="py-24 border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
