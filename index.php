@@ -173,7 +173,7 @@
     <!-- ========== HERO SECTION: Umuzi inspired + medium centered image ========== -->
     <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-12 lg:gap-8 py-20 lg:py-28">
       <!-- LEFT IMAGE: smaller, centered -->
-      <div class="lg:w-1/3 w-1/2 mx-auto lg:mx-0 relative rounded-full">
+      <div class="lg:w-1/4 w-2/5 mx-auto lg:mx-0 relative rounded-full">
         <div class="w-full aspect-square bg-cover bg-center bg-no-repeat overflow-hidden shadow-lg rounded-full"
           style="background-image: url('avatar.jpeg'); background-size: cover; background-position: center;">
           <div class="w-full h-full bg-gradient-to-r from-[#5C766D]/20 via-transparent to-transparent"></div>
