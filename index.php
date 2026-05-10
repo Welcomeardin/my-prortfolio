@@ -547,6 +547,9 @@
               <div class="orbit-pod" style="top:50%;left:95%;">
                 <i class="fab fa-html5" style="color:#E34C26;"></i>
               </div>
+               <div class="orbit-pod" style="top:84%;left:85%;">
+                <i class="fab fa-js" style="color:#F7DF1E;"></i>
+              </div>
               <!-- <div class="orbit-pod" style="top:84%;left:85%;">
                 <i class="fas fa-wind" style="color:#06B6D4;"></i>
               </div> -->
@@ -568,9 +571,7 @@
               <div class="orbit-pod" style="top:70%;left:50%;">
                 <i class="fas fa-infinity" style="color:#FF6B35;"></i>
               </div>
-              <div class="orbit-pod" style="top:8%;left:30%;">
-                <i class="fab fa-js" style="color:#F7DF1E;"></i>
-              </div>
+             
             </div>
           </div>
 
