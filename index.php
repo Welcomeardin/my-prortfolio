@@ -517,7 +517,7 @@
 
         <!-- section header -->
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">My <p class="text-[#C9996B]">Technical</p> Stack</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">My <em class="text-[#C9996B]">Technical</em> Stack</h2>
         </div>
 
         <div class="skills-split-container">
@@ -622,7 +622,7 @@
                 <p class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">
                     FEATURED WORK
 </p>
-                <div class="display" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">My Projects</div>
+                <div class="display mb-6 text-[#5C4F4A]" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">My Projects</div>
             </div>
 
             <!-- PROJECTS GRID -->
