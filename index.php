@@ -493,7 +493,7 @@
 
             <!-- Right Column - Image -->
             <div class="relative">
-              <div class="bg-[#EDE9E6] rounded-lg overflow-hidden shadow-lg border border-[#C9996B]/10">
+              <div class="bg-[#EDE9E6]  overflow-hidden shadow-lg border border-[#C9996B]/10">
                 <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" 
                      class="w-full h-full object-cover" 
                      alt="Web Design and Development">
