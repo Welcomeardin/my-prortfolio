@@ -93,160 +93,6 @@
       align-items: center;
       gap: 1rem;
     }
-
-    /* Skills Orbit Animation */
-    .skills-orbit-container {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 1/1;
-      max-width: 400px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .orbit-ring {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      border: 1px solid rgba(201, 153, 107, 0.1);
-    }
-
-    .orbit-ring-outer {
-      width: 100%;
-      height: 100%;
-    }
-
-    .orbit-ring-accent {
-      width: 75%;
-      height: 75%;
-      border: 2px dashed #C9996B;
-      opacity: 0.3;
-    }
-
-    .orbit-ring-inner {
-      width: 50%;
-      height: 50%;
-    }
-
-    .orbit-spin {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      animation: orbitSpin 40s linear infinite;
-    }
-
-    .orbit-pod {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 25px rgba(92, 79, 74, 0.1);
-      border: 2px solid #C9996B;
-      transform: translate(-50%, -50%);
-      transition: all 0.3s ease;
-    }
-
-    .orbit-pod:hover {
-      transform: translate(-50%, -50%) scale(1.2);
-      box-shadow: 0 12px 35px rgba(201, 153, 107, 0.3);
-      z-index: 10;
-    }
-
-    .orbit-pod i {
-      font-size: 1.8rem;
-      color: #5C766D;
-      animation: orbitCounterSpin 40s linear infinite;
-    }
-
-    .orbit-center {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
-      width: 100px;
-      height: 100px;
-      background: #5C766D;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 15px 40px rgba(92, 118, 109, 0.2);
-      border: 3px solid #C9996B;
-    }
-
-    .orbit-center-inner {
-      color: white;
-      font-family: 'Century Gothic', sans-serif;
-      font-weight: 800;
-      font-size: 1.2rem;
-      text-align: center;
-    }
-
-    @keyframes orbitSpin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    @keyframes orbitCounterSpin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(-360deg); }
-    }
-
-    .skills-split-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    @media (max-width: 1024px) {
-      .skills-split-container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-      }
-    }
-
-    .skill-desc-block {
-      margin-bottom: 2rem;
-    }
-
-    .skill-desc-title {
-      font-family: 'Century Gothic', sans-serif;
-      font-weight: 700;
-      font-size: 1.2rem;
-      color: #5C766D;
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .skill-desc-title i {
-      color: #C9996B;
-      font-size: 1.3rem;
-    }
-
-    .skill-desc-text {
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #5C4F4A;
-      border-left: 3px solid #C9996B;
-      padding-left: 1.5rem;
-      margin-left: 0.5rem;
-    }
   </style>
 </head>
 
@@ -339,7 +185,7 @@
         <div class="max-w-xl mx-auto lg:mx-0">
           <div class="inline-flex items-center gap-2 mb-2 mt-3">
             <span class="w-10 h-[2px] bg-[#C9996B]"></span>
-            <span class="text-[#5C766D] text-sm uppercase tracking-[0.2em] font-semibold">AI Product Engineer</span>
+            <span class="text-[#5C766D] text-sm uppercase tracking-[0.2em] font-semibold">Web Developer</span>
           </div>
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#5C4F4A] leading-[1.15]">
             Welcome Ardin
@@ -483,12 +329,12 @@
                 </div>
               </div>
 
-              <!-- Badges
+              <!-- Badges -->
               <div class="flex flex-wrap gap-2">
                 <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">TAILWIND CSS</span>
                 <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">REACT</span>
                 <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">FIGMA</span>
-              </div> -->
+              </div>
             </div>
 
             <!-- Right Column - Image -->
@@ -507,231 +353,94 @@
       </div>
     </div>
 
-    <!-- ========== SKILLS SECTION ========== -->
-    <div class="py-20 lg:py-28 bg-[#EDE9E6] border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
-      <div>
-        <!-- Dashed line separator -->
-        <div class="flex items-center justify-center">
-          <span class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">Skills I Have</span>
-        </div>
-
-        <!-- section header -->
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">My <em class="text-[#C9996B]">Technical</em> Stack</h2>
-        </div>
-
-        <div class="skills-split-container">
-          <!-- LEFT: Visual Orbit -->
-          <div class="skills-orbit-container">
-            <div class="orbit-ring orbit-ring-outer"></div>
-            <div class="orbit-ring orbit-ring-accent"></div>
-            <div class="orbit-ring orbit-ring-inner"></div>
-
-            <div class="orbit-center">
-              <div class="orbit-center-inner">SKILLS</div>
+    <section id="skills" style="padding:5rem 2rem; background:var(--bg);">
+        <div style="max-width:1100px; margin:0 auto;">
+            <div style="text-align:center; margin-bottom:3rem;">
+                <div style="display:inline-block; padding:0.4rem 1.2rem; background:var(--white); border:1px solid var(--surface); border-radius:999px; font-size:0.75rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom: 1.5rem;">
+                    CORE CAPABILITIES
+                </div>
+                <div class="display" style="font-size:clamp(2rem, 5vw, 3.2rem);">
+                    My <em>Technical</em> Stack
+                </div>
             </div>
 
-            <div class="orbit-spin">
-              <div class="orbit-pod" style="top:0%;left:50%;">
-                <i class="fab fa-laravel" style="color:#FF2D20;"></i>
-              </div>
-              <div class="orbit-pod" style="top:16%;left:85%;">
-                <i class="fab fa-react" style="color:#61DAFB;"></i>
-              </div>
-              <div class="orbit-pod" style="top:50%;left:95%;">
-                <i class="fab fa-html5" style="color:#E34C26;"></i>
-              </div>
-               <div class="orbit-pod" style="top:84%;left:85%;">
-                <i class="fab fa-js" style="color:#F7DF1E;"></i>
-              </div>
-              <!-- <div class="orbit-pod" style="top:84%;left:85%;">
-                <i class="fas fa-wind" style="color:#06B6D4;"></i>
-              </div> -->
-              <div class="orbit-pod" style="top:100%;left:50%;">
-                <i class="fab fa-bootstrap" style="color:#7952B3;"></i>
-              </div>
-              <div class="orbit-pod" style="top:84%;left:15%;">
-                <i class="fab fa-css3-alt" style="color:#1572B6;"></i>
-              </div>
-              <div class="orbit-pod" style="top:50%;left:5%;">
-                <i class="fab fa-github" style="color:#181717;"></i>
-              </div>
-              <div class="orbit-pod" style="top:16%;left:15%;">
-                <i class="fab fa-php" style="color:#777BB4;"></i>
-              </div>
-              <div class="orbit-pod" style="top:30%;left:50%;">
-                <i class="fas fa-database" style="color:#4479A1;"></i>
-              </div>
-              <div class="orbit-pod" style="top:70%;left:50%;">
-                <i class="fas fa-infinity" style="color:#FF6B35;"></i>
-              </div>
-             
-            </div>
-          </div>
+            <div class="skills-split-container">
+                <!-- LEFT: Visual Orbit -->
+                <div class="skills-orbit-container">
+                    <div class="orbit-ring orbit-ring-outer"></div>
+                    <div class="orbit-ring orbit-ring-accent"></div>
+                    <div class="orbit-ring orbit-ring-inner"></div>
 
-          <!-- RIGHT: Technical Descriptions -->
-          <div class="skills-expertise">
-            <div class="skill-desc-block">
-              <div class="skill-desc-title">
-                <i class="fas fa-layer-group"></i>
-                Frontend Development
-              </div>
-              <div class="skill-desc-text">
-                Building responsive, interactive user interfaces with React, HTML, CSS, and modern frameworks like Tailwind CSS and Bootstrap.
-              </div>
-            </div>
-
-            <div class="skill-desc-block">
-              <div class="skill-desc-title">
-                <i class="fas fa-server"></i>
-                Backend Development
-              </div>
-              <div class="skill-desc-text">
-                Creating robust server-side applications with PHP and Laravel, managing databases with MySQL, and implementing RESTful APIs.
-              </div>
-            </div>
-
-            <div class="skill-desc-block">
-              <div class="skill-desc-title">
-                <i class="fas fa-code-branch"></i>
-                Version Control
-              </div>
-              <div class="skill-desc-text">
-                Managing code versions and collaboration using Git and GitHub, ensuring clean, maintainable codebases for team projects.
-              </div>
-            </div>
-
-            <div class="skill-desc-block">
-              <div class="skill-desc-title">
-                <i class="fas fa-rocket"></i>
-                DevOps & CI/CD
-              </div>
-              <div class="skill-desc-text">
-                Implementing continuous integration and deployment pipelines to automate testing, building, and deployment processes.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!-- PROJECTS -->
-    <section id="projects" class="border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
-        <div style="max-width:1100px;margin:0 auto;">
-            <div style="text-align:center;margin-top:3.5rem;">
-                <p class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">
-                    FEATURED WORK
-</p>
-                <div class="display mb-6 text-[#5C4F4A]" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">My Projects</div>
-            </div>
-
-            <!-- PROJECTS GRID -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                <!-- PROJECT 1: LARAVEL WEB APP -->
-                <div class="card">
-                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
-                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Laravel Web Application">
-                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Laravel</span>
-                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Full Stack</span>
-                        </div>
+                    <div class="orbit-center">
+                        <div class="orbit-center-inner">EN</div>
                     </div>
-                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">E-Commerce Platform</div>
-                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Built a complete e-commerce platform with Laravel, MySQL, and Tailwind CSS. Features include user authentication, payment integration, and admin dashboard.</p>
-                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                            <div style="display:flex;gap:0.5rem;">
-                                <i class="fab fa-laravel" style="font-size:1.3rem;color:#FF2D20;" title="Laravel"></i>
-                                <i class="fab fa-php" style="font-size:1.3rem;color:#777BB4;" title="PHP"></i>
-                                <i class="fas fa-database" style="font-size:1.3rem;color:#4479A1;" title="MySQL"></i>
-                            </div>
-                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                            </a>
+
+                    <div class="orbit-spin">
+                        <div class="orbit-pod" style="top:0%;left:50%;">
+                            <i class="devicon-amazonwebservices-original" style="color:#FF9900;"></i>
+                        </div>
+                        <div class="orbit-pod" style="top:34%;left:98%;">
+                            <i class="devicon-kubernetes-plain" style="color:#326CE5;"></i>
+                        </div>
+                        <div class="orbit-pod" style="top:90%;left:80%;">
+                            <i class="devicon-python-plain" style="color:#3776AB;"></i>
+                        </div>
+                        <div class="orbit-pod" style="top:90%;left:20%;">
+                            <i class="devicon-terraform-plain" style="color:#623CE4;"></i>
+                        </div>
+                        <div class="orbit-pod" style="top:34%;left:2%;">
+                            <i class="devicon-docker-plain" style="color:#2496ED;"></i>
                         </div>
                     </div>
                 </div>
 
-                <!-- PROJECT 2: REACT DASHBOARD -->
-                <div class="card">
-                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="React Dashboard">
-                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">React</span>
-                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Dashboard</span>
+                <!-- RIGHT: Technical Descriptions -->
+                <div class="skills-expertise">
+                    <div class="skill-desc-block">
+                        <div class="skill-desc-title">
+                            <i data-feather="cloud"></i>
+                            Cloud Architecture
+                        </div>
+                        <div class="skill-desc-text">
+                            Architecting high-availability AWS ecosystems using Well-Architected frameworks for global-scale stability.
                         </div>
                     </div>
-                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Analytics Dashboard</div>
-                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Developed a responsive analytics dashboard with React, Tailwind CSS, and Chart.js. Features real-time data visualization and interactive components.</p>
-                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                            <div style="display:flex;gap:0.5rem;">
-                                <i class="fab fa-react" style="font-size:1.3rem;color:#61DAFB;" title="React"></i>
-                                <i class="fab fa-js" style="font-size:1.3rem;color:#F7DF1E;" title="JavaScript"></i>
-                                <i class="fas fa-wind" style="font-size:1.3rem;color:#06B6D4;" title="Tailwind CSS"></i>
-                            </div>
-                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                            </a>
+
+                    <div class="skill-desc-block">
+                        <div class="skill-desc-title">
+                            <i data-feather="box"></i>
+                            K8s & Orchestration
+                        </div>
+                        <div class="skill-desc-text">
+                            Production-grade Kubernetes management with focus on zero-downtime deployments and auto-scaling logic.
+                        </div>
+                    </div>
+
+                    <div class="skill-desc-block">
+                        <div class="skill-desc-title">
+                            <i data-feather="database"></i>
+                            Data Systems
+                        </div>
+                        <div class="skill-desc-text">
+                            Designing distributed data pipelines and self-healing storage solutions for massive-scale datasets.
+                        </div>
+                    </div>
+
+                    <div class="skill-desc-block">
+                        <div class="skill-desc-title">
+                            <i data-feather="cpu"></i>
+                            Automation / IaC
+                        </div>
+                        <div class="skill-desc-text">
+                            End-to-end automation with Terraform and Python to eliminate manual toil and ensure consistency.
                         </div>
                     </div>
                 </div>
-
-                <!-- PROJECT 3: PORTFOLIO WEBSITE -->
-                <div class="card">
-                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Portfolio Website">
-                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">HTML/CSS</span>
-                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Responsive</span>
-                        </div>
-                    </div>
-                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Personal Portfolio</div>
-                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Created a modern, responsive portfolio website using HTML, CSS, Bootstrap, and JavaScript. Features smooth animations and mobile-first design.</p>
-                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                            <div style="display:flex;gap:0.5rem;">
-                                <i class="fab fa-html5" style="font-size:1.3rem;color:#E34C26;" title="HTML5"></i>
-                                <i class="fab fa-css3-alt" style="font-size:1.3rem;color:#1572B6;" title="CSS3"></i>
-                                <i class="fab fa-bootstrap" style="font-size:1.3rem;color:#7952B3;" title="Bootstrap"></i>
-                            </div>
-                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PROJECT 4 CI/CD PIPELINE -->
-                <div class="card">
-                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="CI/CD Pipeline">
-                        <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
-                            <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">DevOps</span>
-                            <span style="background:[#C9996B];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">CI/CD</span>
-                        </div>
-                    </div>
-                    <div style="padding:1.5rem;flex-grow:1;display:flex;flex-direction:column;">
-                        <div style="font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.6rem;">Automated CI/CD Pipeline</div>
-                        <p style="color:[#5C4F4A];font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem;">Implemented a complete CI/CD pipeline using GitHub Actions. Features automated testing, deployment staging, and production releases with rollback capabilities.</p>
-                        <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;">
-                            <div style="display:flex;gap:0.5rem;">
-                                <i class="fab fa-github" style="font-size:1.3rem;color:#181717;" title="GitHub"></i>
-                                <i class="fas fa-infinity" style="font-size:1.3rem;color:#FF6B35;" title="CI/CD"></i>
-                                <i class="fab fa-docker" style="font-size:1.3rem;color:#2496ED;" title="Docker"></i>
-                            </div>
-                            <a href="https://github.com/Welcomeardin" style="color:[#5C766D];font-size:0.8rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.3rem;">
-                                View Project <i class="fas fa-external-link-alt" style="width:13px;height:13px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </div>
     </section>
+
+
 
     <!-- ========== CONTACT & CTA SECTION ========== -->
     <div class="py-24 border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
@@ -741,7 +450,7 @@
 
         <div class="flex flex-wrap gap-10 justify-center mt-12">
           <!-- GITHUB LINK -->
-          <a href="https://github.com/lionel-k" target="_blank" class="flex items-center gap-4 text-[#5C4F4A] hover:text-[#5C766D] transition-all group">
+          <a href="https://github.com/Welcomeardin" target="_blank" class="flex items-center gap-4 text-[#5C4F4A] hover:text-[#5C766D] transition-all group">
             <div class="w-14 h-14 rounded-full border border-[#C9996B]/40 flex items-center justify-center group-hover:bg-[#C9996B]/10 transition-all">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
@@ -754,7 +463,7 @@
           </a>
 
           <!-- EMAIL LINK -->
-          <a href="mailto:lionel@kubwimana.me" class="flex items-center gap-4 text-[#5C4F4A] hover:text-[#5C766D] transition-all group">
+          <a href="mailto:welcomeardin@gmail.com" class="flex items-center gap-4 text-[#5C4F4A] hover:text-[#5C766D] transition-all group">
             <div class="w-14 h-14 rounded-full border border-[#C9996B]/40 flex items-center justify-center group-hover:bg-[#C9996B]/10 transition-all">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -776,17 +485,17 @@
           <!-- brand column -->
           <div class="lg:col-span-1">
             <div class="flex items-center gap-2 mb-4">
-              <div class="w-9 h-9 bg-[#C9996B] rounded-full flex items-center justify-center text-white font-bold text-lg">LK</div>
-              <span class="text-xl font-bold tracking-tight">Lionel Kubwimana</span>
+              <div class="w-9 h-9 bg-[#C9996B] rounded-full flex items-center justify-center text-white font-bold text-lg">WA</div>
+              <span class="text-xl font-bold tracking-tight">Welcome Ardin</span>
             </div>
             <p class="text-[#EDE9E6]/80 text-sm leading-relaxed">
               Software engineer & AI product builder. Building useful tools for African languages & communities. OpenClaw core contributor.
             </p>
             <div class="flex gap-4 mt-6">
-              <a href="#" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-github"></i></a>
-              <a href="#" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fas fa-rss"></i></a>
+              <a href="https://github.com/Welcomeardin" target="_blank" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-github"></i></a>
+              <a href="https://twitter.com/Welcomeardin" target="_blank" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/welcomeardin" target="_blank" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://welcomeardin.hashnode.dev/" target="_blank" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fas fa-rss"></i></a>
             </div>
           </div>
 
@@ -815,8 +524,8 @@
           <!-- contact + social from original -->
           <div>
             <h4 class="font-bold text-white text-md mb-4 border-l-3 border-[#C9996B] pl-3">Connect</h4>
-            <p class="text-sm text-[#EDE9E6]/80 flex items-center gap-2 mb-2"><i class="far fa-envelope text-[#C9996B]"></i> lionel@kubwimana.me</p>
-            <p class="text-sm text-[#EDE9E6]/80 flex items-center gap-2"><i class="fab fa-github-alt"></i> lionel-k</p>
+            <p class="text-sm text-[#EDE9E6]/80 flex items-center gap-2 mb-2"><i class="far fa-envelope text-[#C9996B]"></i> welcomeardin@gmail.com</p>
+            <p class="text-sm text-[#EDE9E6]/80 flex items-center gap-2"><i class="fab fa-github-alt"></i> Welcomeardin</p>
             <div class="mt-6">
               <a href="#" class="inline-flex items-center gap-2 bg-[#C9996B]/20 backdrop-blur-sm px-5 py-2.5 rounded-full text-sm text-white border border-[#C9996B]/40 hover:bg-[#C9996B]/40 transition">
                 <i class="fas fa-podcast"></i> subscribe via RSS
@@ -826,7 +535,7 @@
         </div>
 
         <div class="border-t border-[#EDE9E6]/20 mt-14 pt-7 flex flex-col md:flex-row justify-between items-center text-xs text-[#EDE9E6]/60">
-          <p>© 2026 Lionel Kubwimana — Software Engineer & AI Product Builder. Built with Ardin wel</p>
+          <p>© 2026 Welcome Ardin — Web Developer & AI Product Engineer. Built with Ardin welcome</p>
           <div class="flex gap-5 mt-3 md:mt-0">
             <a href="#" class="hover:text-[#C9996B] transition">Privacy</a>
             <a href="#" class="hover:text-[#C9996B] transition">Imprint</a>
