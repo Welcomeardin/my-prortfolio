@@ -517,7 +517,7 @@
 
         <!-- section header -->
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">My <em class="text-[#C9996B]">Technical</em> Stack</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight">My <p class="text-[#C9996B]">Technical</p> Stack</h2>
         </div>
 
         <div class="skills-split-container">
@@ -618,11 +618,11 @@
       <!-- PROJECTS -->
     <section id="projects" class="border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
         <div style="max-width:1100px;margin:0 auto;">
-            <div style="text-align:center;margin-bottom:3.5rem;">
-                <div style="display:inline-block; padding:0.4rem 1.2rem; background:[#EDE9E6]; border:1px solid [#C9996B]/30; border-radius:999px; font-size:0.75rem; font-weight:700; color:[#5C766D]; text-transform:uppercase; letter-spacing:0.05em; margin-bottom: 1.5rem;">
+            <div style="text-align:center;margin-top:3.5rem;">
+                <p class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">
                     FEATURED WORK
-                </div>
-                <div class="display" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">My <em style="color:[#C9996B];">Projects</em></div>
+</p>
+                <div class="display" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">My Projects</div>
             </div>
 
             <!-- PROJECTS GRID -->
@@ -730,11 +730,6 @@
 
             </div>
 
-            <div style="text-align:center;margin-top:2.5rem;">
-                <a href="https://github.com/Welcomeardin" class="btn-outline" style="font-size:0.9rem;padding:0.7rem 2rem;display:inline-flex;align-items:center;gap:0.5rem;border:1.5px solid [#5C766D];color:[#5C766D];">
-                    <i class="fab fa-github" style="width:16px;height:16px;"></i> View All on GitHub
-                </a>
-            </div>
         </div>
     </section>
 
