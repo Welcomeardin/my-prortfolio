@@ -1,0 +1,32 @@
+name: Deploy to InfinityFree
+
+on:
+  push:
+    branches:
+      - main
+      - master  # Include if you use master branch
+  workflow_dispatch:  # Manual trigger option
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Deploy to InfinityFree via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftpupload.net
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /htdocs/  # Main domain directory
+          exclude: |
+            .git/
+            .github/
+            .gitignore
+            README.md
+            .vscode/
+            node_modules/  # If you have Tailwind built locally
+          state-name: .ftp-deploy-sync-state.json
