@@ -626,11 +626,11 @@
             </div>
 
             <!-- PROJECTS GRID -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- PROJECT 1: LARAVEL WEB APP -->
                 <div class="card">
-                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
                         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Laravel Web Application">
                         <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
                             <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">Laravel</span>
@@ -655,7 +655,7 @@
 
                 <!-- PROJECT 2: REACT DASHBOARD -->
                 <div class="card">
-                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="React Dashboard">
                         <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
                             <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">React</span>
@@ -680,7 +680,7 @@
 
                 <!-- PROJECT 3: PORTFOLIO WEBSITE -->
                 <div class="card">
-                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Portfolio Website">
                         <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
                             <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">HTML/CSS</span>
@@ -705,7 +705,7 @@
 
                 <!-- PROJECT 4 CI/CD PIPELINE -->
                 <div class="card">
-                    <div style="background:[#EDE9E6];height:220px;position:relative;overflow:hidden;">
+                    <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
                         <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="CI/CD Pipeline">
                         <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
                             <span style="background:[#5C766D];color:#fff;font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;text-transform:uppercase;">DevOps</span>
