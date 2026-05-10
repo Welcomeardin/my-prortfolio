@@ -622,7 +622,7 @@
                 <p class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">
                     FEATURED WORK
 </p>
-                <div class="display mb-6 text-[#5C4F4A]" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">My Projects</div>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight" >My Projects</h2>
             </div>
 
             <!-- PROJECTS GRID -->
