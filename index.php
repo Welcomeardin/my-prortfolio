@@ -248,39 +248,64 @@
       margin-left: 0.5rem;
     }
 
-    /* Cube Wall Styles */
-    .cube-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      padding: 10px;
+    /* Brick Wall Styles */
+    .brick-wall {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
     }
 
-    .cube {
-      width: 24px;
-      height: 24px;
-      background-color: #C9996B;
+    .brick-row {
+      display: flex;
+      gap: 5px;
+    }
+
+    .brick {
+      height: 16px;
+      background-color: #5C4F4A;
       opacity: 0.1;
-      border-radius: 2px;
-      transition: all 0.4s ease;
+      border-radius: 1px;
+      flex: 1;
+      transition: opacity 0.3s ease;
     }
 
-    .cube:nth-child(3n) { background-color: #5C766D; }
-    .cube:nth-child(5n) { background-color: #5C4F4A; }
-
-    .cube:hover {
-      opacity: 0.6;
-      transform: scale(1.2) rotate(10deg);
-      background-color: #C9996B;
+    .brick:hover {
+      opacity: 0.3;
     }
 
-    @keyframes cubeEntrance {
-      from { opacity: 0; transform: scale(0.5); }
-      to { opacity: 0.1; transform: scale(1); }
+    .brick-row:nth-child(even) {
+      padding-right: 12px;
+    }
+    
+    .brick-row:nth-child(odd) {
+      padding-left: 12px;
     }
 
-    .cube-animate {
-      animation: cubeEntrance 0.8s ease-out forwards;
+    /* Sand Texture Styles */
+    .sand-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      pointer-events: none;
+      background-image: radial-gradient(#C9996B 1.5px, transparent 1.5px);
+      background-size: 6px 6px;
+      opacity: 0.15;
+      mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+      -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+
+    .sand-wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #C9996B;
+      opacity: 0.05;
+      clip-path: polygon(0 100%, 100% 100%, 100% 0, 85% 40%, 70% 10%, 55% 45%, 40% 15%, 25% 40%, 10% 5%, 0 35%);
     }
   </style>
 </head>
@@ -359,87 +384,73 @@
       });
     </script>
 
-    <!-- ========== HERO SECTION: Centered with Cube Walls ========== -->
+    <!-- ========== HERO SECTION: Centered with Brick Walls & Sand Bottom ========== -->
     <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-8 py-20 lg:py-32 overflow-hidden">
       
-      <!-- LEFT CUBE WALL -->
-      <div class="hidden lg:flex lg:w-1/5 justify-start opacity-40">
-        <div class="cube-grid">
-          <div class="cube cube-animate" style="animation-delay: 0.0s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.1s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.2s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.3s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.4s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.5s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.6s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.7s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.8s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.9s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.0s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.1s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.2s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.3s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.4s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.5s"></div>
+      <!-- LEFT BRICK WALL -->
+      <div class="hidden lg:flex lg:w-1/6 justify-start opacity-30">
+        <div class="brick-wall">
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
         </div>
       </div>
 
       <!-- CENTER TEXT SECTION -->
       <div class="flex-1 w-full px-4 md:px-8 flex flex-col items-center text-center relative z-10">
-        <div class="max-w-2xl mx-auto">
-          <div class="inline-flex items-center justify-center gap-2 mb-4">
-            <span class="w-8 h-[2px] bg-[#C9996B]"></span>
-            <span class="text-[#5C766D] text-xs md:text-sm uppercase tracking-[0.3em] font-bold">AI Product Engineer</span>
-            <span class="w-8 h-[2px] bg-[#C9996B]"></span>
-          </div>
-          
-          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#5C4F4A] leading-none mb-6">
-            Welcome <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5C4F4A] via-[#C9996B] to-[#5C766D]">Ardin</span>
+        <div class="max-w-3xl mx-auto">
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#5C4F4A] leading-none mb-4 whitespace-nowrap">
+            Welcome Ardin
           </h1>
 
-          <div class="flex flex-col items-center gap-4">
-            <p class="text-xl md:text-3xl text-[#C9996B] font-bold tracking-tight">
+          <div class="flex flex-col items-center gap-2 mb-8">
+            <p class="text-xl md:text-2xl text-[#C9996B] font-bold tracking-widest uppercase">
               Web Designer & Developer
             </p>
-            <div class="w-24 h-1 bg-[#5C766D] rounded-full mb-2"></div>
+            <div class="w-16 h-1 bg-[#5C766D]/40 rounded-full"></div>
           </div>
 
-          <p class="text-[#5C4F4A]/70 mt-6 text-lg md:text-xl leading-relaxed max-w-lg mx-auto font-medium">
+          <p class="text-[#5C4F4A]/70 text-lg md:text-xl leading-relaxed max-w-xl mx-auto font-medium">
             Creating beautiful and functional websites for clients around the world. Documenting my journey with <span class="text-[#5C766D] font-bold">OpenClaw</span> — where AI meets practical automation.
           </p>
 
-          <div class="flex flex-wrap items-center justify-center gap-5 mt-12">
-            <a href="work.php" class="group inline-flex items-center gap-3 px-10 py-4 bg-[#5C766D] text-white font-bold rounded-full shadow-xl hover:bg-[#4a625a] hover:scale-105 transition-all duration-300 btn-pulse">
+          <div class="flex flex-wrap items-center justify-center gap-5 mt-10">
+            <a href="work.php" class="group inline-flex items-center gap-3 px-8 py-3.5 bg-[#5C766D] text-white font-bold rounded-full shadow-lg hover:bg-[#4a625a] hover:translate-y-[-2px] transition-all duration-300">
               Explore work <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition"></i>
             </a>
-            <a href="https://github.com/Welcomeardin" class="inline-flex items-center gap-3 px-10 py-4 bg-white text-[#5C4F4A] font-bold rounded-full border-2 border-[#C9996B]/20 hover:border-[#C9996B] hover:shadow-lg transition-all duration-300">
+            <a href="https://github.com/Welcomeardin" class="inline-flex items-center gap-3 px-8 py-3.5 bg-white text-[#5C4F4A] font-bold rounded-full border-2 border-[#C9996B]/20 hover:border-[#C9996B] hover:shadow-md transition-all duration-300">
               <i class="fab fa-github text-xl"></i> GitHub
             </a>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT CUBE WALL -->
-      <div class="hidden lg:flex lg:w-1/5 justify-end opacity-40">
-        <div class="cube-grid">
-          <div class="cube cube-animate" style="animation-delay: 0.8s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.7s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.6s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.5s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.4s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.3s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.2s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.1s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.0s"></div>
-          <div class="cube cube-animate" style="animation-delay: 0.9s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.0s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.1s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.2s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.3s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.4s"></div>
-          <div class="cube cube-animate" style="animation-delay: 1.5s"></div>
+      <!-- RIGHT BRICK WALL -->
+      <div class="hidden lg:flex lg:w-1/6 justify-end opacity-30">
+        <div class="brick-wall">
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
+          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
         </div>
       </div>
+
+      <!-- SAND BOTTOM DECORATION -->
+      <div class="sand-bottom"></div>
+      <div class="sand-wave"></div>
 
     </div>
 
