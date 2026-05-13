@@ -24,7 +24,7 @@
     }
 
     body {
-      background-color: #EDE9E6;
+      background-color: #ffffff;
     }
 
     .card-hover {
@@ -41,7 +41,7 @@
     }
 
     .hero-gradient-mask {
-      background: linear-gradient(92deg, #EDE9E6 0%, #EDE9E6 100%);
+      background: linear-gradient(92deg, #ffffff 0%, #ffffff 100%);
     }
 
     @media (min-width: 1024px) {
@@ -247,15 +247,50 @@
       padding-left: 1.5rem;
       margin-left: 0.5rem;
     }
+
+    /* Cube Wall Styles */
+    .cube-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 10px;
+    }
+
+    .cube {
+      width: 24px;
+      height: 24px;
+      background-color: #C9996B;
+      opacity: 0.1;
+      border-radius: 2px;
+      transition: all 0.4s ease;
+    }
+
+    .cube:nth-child(3n) { background-color: #5C766D; }
+    .cube:nth-child(5n) { background-color: #5C4F4A; }
+
+    .cube:hover {
+      opacity: 0.6;
+      transform: scale(1.2) rotate(10deg);
+      background-color: #C9996B;
+    }
+
+    @keyframes cubeEntrance {
+      from { opacity: 0; transform: scale(0.5); }
+      to { opacity: 0.1; transform: scale(1); }
+    }
+
+    .cube-animate {
+      animation: cubeEntrance 0.8s ease-out forwards;
+    }
   </style>
 </head>
 
 <body class="antialiased">
 
-  <main class="max-w-[1280px] mx-auto px-8 md:px-16 lg:px-20 bg-[#EDE9E6] overflow-hidden relative border-l border-r border-[#C9996B]/30" style="border-image: linear-gradient(to bottom, #C9996B, transparent) 1;">
+  <main class="max-w-[1280px] mx-auto px-8 md:px-16 lg:px-20 bg-white overflow-hidden relative border-l border-r border-[#C9996B]/30" style="border-image: linear-gradient(to bottom, #C9996B, transparent) 1;">
 
     <!-- ========== NAVBAR WITH CONTAINER LINES ========== -->
-    <nav class="sticky top-0 z-50 bg-[#EDE9E6]/95 backdrop-blur-sm border-b border-[#C9996B]/20 -mx-8 md:-mx-16 lg:-mx-20">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#C9996B]/20 -mx-8 md:-mx-16 lg:-mx-20">
       <div class="px-8 md:px-16 lg:px-20 py-4 flex items-center justify-between relative">
         <!-- LEFT LINE -->
         <div class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-gradient-to-r from-transparent to-[#C9996B]"></div>
@@ -283,7 +318,7 @@
         </div>
 
         <!-- MOBILE MENU (Dropdown) -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-[#EDE9E6]/98 backdrop-blur-sm border-b border-[#C9996B]/20 md:hidden">
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-white/98 backdrop-blur-sm border-b border-[#C9996B]/20 md:hidden">
           <div class="px-8 py-4 flex flex-col gap-4">
             <a href="index.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Home</a>
             <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
@@ -324,42 +359,88 @@
       });
     </script>
 
-    <!-- ========== HERO SECTION: Umuzi inspired + medium centered image ========== -->
-    <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-12 lg:gap-8 py-20 lg:py-28">
-      <!-- LEFT IMAGE: smaller, centered -->
-      <div class="lg:w-1/4 w-2/5 mx-auto lg:mx-0 lg:ml-8 relative rounded-full">
-        <div class="w-full aspect-square bg-cover bg-center bg-no-repeat overflow-hidden shadow-lg rounded-full"
-          style="background-image: url('img/me.jpg'); background-size: cover; background-position: center;">
-          <div class="w-full h-full bg-gradient-to-r from-[#5C766D]/20 via-transparent to-transparent"></div>
+    <!-- ========== HERO SECTION: Centered with Cube Walls ========== -->
+    <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-8 py-20 lg:py-32 overflow-hidden">
+      
+      <!-- LEFT CUBE WALL -->
+      <div class="hidden lg:flex lg:w-1/5 justify-start opacity-40">
+        <div class="cube-grid">
+          <div class="cube cube-animate" style="animation-delay: 0.0s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.1s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.2s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.3s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.4s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.5s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.6s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.7s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.8s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.9s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.0s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.1s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.2s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.3s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.4s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.5s"></div>
         </div>
       </div>
 
-      <!-- RIGHT TEXT SECTION (hero content) -->
-      <div class="lg:w-3/5 w-full px-8 md:px-12 py-8 lg:py-0 flex flex-col justify-center bg-[#EDE9E6] relative">
-        <div class="max-w-xl mx-auto lg:mx-0">
-          <div class="inline-flex items-center gap-2 mb-2 mt-3">
-            <span class="w-10 h-[2px] bg-[#C9996B]"></span>
-            <span class="text-[#5C766D] text-sm uppercase tracking-[0.2em] font-semibold">AI Product Engineer</span>
+      <!-- CENTER TEXT SECTION -->
+      <div class="flex-1 w-full px-4 md:px-8 flex flex-col items-center text-center relative z-10">
+        <div class="max-w-2xl mx-auto">
+          <div class="inline-flex items-center justify-center gap-2 mb-4">
+            <span class="w-8 h-[2px] bg-[#C9996B]"></span>
+            <span class="text-[#5C766D] text-xs md:text-sm uppercase tracking-[0.3em] font-bold">AI Product Engineer</span>
+            <span class="w-8 h-[2px] bg-[#C9996B]"></span>
           </div>
-          <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#5C4F4A] leading-[1.15]">
-            Welcome Ardin
+          
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#5C4F4A] leading-none mb-6">
+            Welcome <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5C4F4A] via-[#C9996B] to-[#5C766D]">Ardin</span>
           </h1>
-          <p class="text-xl md:text-2xl text-[#5C4F4A]/85 mt-5 font-medium border-l-4 border-[#C9996B] pl-6">
-            Web Designer & Developer
+
+          <div class="flex flex-col items-center gap-4">
+            <p class="text-xl md:text-3xl text-[#C9996B] font-bold tracking-tight">
+              Web Designer & Developer
+            </p>
+            <div class="w-24 h-1 bg-[#5C766D] rounded-full mb-2"></div>
+          </div>
+
+          <p class="text-[#5C4F4A]/70 mt-6 text-lg md:text-xl leading-relaxed max-w-lg mx-auto font-medium">
+            Creating beautiful and functional websites for clients around the world. Documenting my journey with <span class="text-[#5C766D] font-bold">OpenClaw</span> — where AI meets practical automation.
           </p>
-          <p class="text-[#5C4F4A]/70 mt-6 text-lg leading-relaxed max-w-md">
-            Creating beautiful and functional websites for clients around the world. Documenting my journey with OpenClaw — where AI meets practical automation.
-          </p>
-          <div class="flex flex-wrap gap-5 mt-10">
-            <a href="work.php" class="group inline-flex items-center gap-2 px-8 py-3.5 bg-[#5C766D] text-white font-semibold rounded-full shadow-md hover:bg-[#4a625a] transition-all duration-200 btn-pulse">
+
+          <div class="flex flex-wrap items-center justify-center gap-5 mt-12">
+            <a href="work.php" class="group inline-flex items-center gap-3 px-10 py-4 bg-[#5C766D] text-white font-bold rounded-full shadow-xl hover:bg-[#4a625a] hover:scale-105 transition-all duration-300 btn-pulse">
               Explore work <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition"></i>
             </a>
-            <a href="https://github.com/Welcomeardin" class="inline-flex items-center gap-2 px-7 py-3.5 bg-white/80 backdrop-blur-sm text-[#5C4F4A] font-medium rounded-full border border-[#C9996B]/40 hover:bg-white hover:shadow-sm transition">
-              <i class="fab fa-github"></i> GitHub
+            <a href="https://github.com/Welcomeardin" class="inline-flex items-center gap-3 px-10 py-4 bg-white text-[#5C4F4A] font-bold rounded-full border-2 border-[#C9996B]/20 hover:border-[#C9996B] hover:shadow-lg transition-all duration-300">
+              <i class="fab fa-github text-xl"></i> GitHub
             </a>
           </div>
         </div>
       </div>
+
+      <!-- RIGHT CUBE WALL -->
+      <div class="hidden lg:flex lg:w-1/5 justify-end opacity-40">
+        <div class="cube-grid">
+          <div class="cube cube-animate" style="animation-delay: 0.8s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.7s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.6s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.5s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.4s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.3s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.2s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.1s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.0s"></div>
+          <div class="cube cube-animate" style="animation-delay: 0.9s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.0s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.1s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.2s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.3s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.4s"></div>
+          <div class="cube cube-animate" style="animation-delay: 1.5s"></div>
+        </div>
+      </div>
+
     </div>
 
     <!-- ========== TRUST / CLIENTS SECTION (inspired by "LSI NOUS FONT CONFIANCE" from Umuzi) ========== -->
@@ -426,7 +507,7 @@
     </div>
 
     <!-- ========== ABOUT SECTION ========== -->
-    <div class="py-20 lg:py-28 bg-[#EDE9E6]">
+    <div class="py-20 lg:py-28 bg-white">
       <div>
         <!-- section header -->
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-[#C9996B]/30 pb-7 mb-12">
@@ -508,7 +589,7 @@
     </div>
 
     <!-- ========== SKILLS SECTION ========== -->
-    <div class="py-20 lg:py-28 bg-[#EDE9E6] border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
+    <div class="py-20 lg:py-28 bg-white border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
       <div>
         <!-- Dashed line separator -->
         <div class="flex items-center justify-center">
