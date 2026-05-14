@@ -482,7 +482,7 @@
         <!-- Status Badge (Match Image) -->
         <div class="status-badge">
           <div class="status-dot"></div>
-          Nous acceptons désormais de nouveaux clients !
+          Web Design & Web Developer !
         </div>
 
         <h1 class="hero-title">
@@ -494,11 +494,11 @@
         </p>
 
         <div class="flex flex-wrap items-center justify-center gap-6 mt-12">
-          <a href="work.php" class="btn-umuzi-primary">
-            Demander un devis
+          <a href="work.php" class="py-3 px-6 bg-[#5C766D] text-white rounded-lg font-semibold hover:bg-[#4a625a] transition duration-200">
+            Let's get to work
           </a>
-          <a href="hire.php" class="btn-umuzi-secondary">
-            Réserver un appel
+          <a href="hire.php" class="py-3 px-6 bg-[#5C766D] text-white rounded-lg font-semibold hover:bg-[#4a625a] transition duration-200">
+            Hire me
           </a>
         </div>
       </div>
