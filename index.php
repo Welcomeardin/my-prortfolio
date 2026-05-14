@@ -599,7 +599,7 @@
     </div>
 
     <!-- ========== ABOUT SECTION ========== -->
-    <div class="bg-[#fbfaf8] border-t border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 py-20 lg:py-28">
+    <div class="bg-[#fbfaf8] border-y border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 py-20 lg:py-28 mt-10">
       <div class="w-full px-8 md:px-16 lg:px-20">
         <!-- section header -->
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-[#C9996B]/30 pb-7 mb-12">
