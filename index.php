@@ -282,10 +282,10 @@
 
     .grid-plane {
       position: absolute;
-      background-image: 
-        radial-gradient(circle at 1px 1px, rgba(0,0,0,0.08) 1.5px, transparent 0),
-        linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.08) 1.5px, transparent 0),
+        linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
       background-size: 60px 60px;
       width: 400%;
       height: 400%;
@@ -316,13 +316,13 @@
       gap: 10px;
       padding: 8px 24px;
       background: white;
-      border: 1px solid rgba(0,0,0,0.06);
+      border: 1px solid rgba(0, 0, 0, 0.06);
       border-radius: 100px;
       font-size: 0.85rem;
       font-weight: 500;
       color: #666;
       margin-bottom: 2.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
     }
 
     .status-dot {
@@ -405,7 +405,7 @@
 
         <!-- LOGO/BRAND -->
         <div class="flex items-center gap-2 relative z-10">
-          <div class="w-10 h-10 bg-[#5C766D] rounded-full flex items-center justify-center text-white font-bold text-sm">WA</div>
+          <div class="w-10 h-10 bg-[#5C766D] rounded-lg flex items-center justify-center text-white font-bold text-sm"><img src="img/me.jpg" alt=""></div>
           <span class="hidden sm:inline font-bold text-[#5C4F4A] text-sm">Ardin</span>
         </div>
 
@@ -422,7 +422,7 @@
           <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
           <a href="skills.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Skills</a>
           <a href="work.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Work</a>
-          <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-full text-sm font-semibold hover:bg-[#4a625a] transition duration-200">Hire me</a>
+          <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-lg text-sm font-semibold hover:bg-[#4a625a] transition duration-200">Hire me</a>
         </div>
 
         <!-- MOBILE MENU (Dropdown) -->
@@ -432,7 +432,7 @@
             <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
             <a href="skills.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Skills</a>
             <a href="work.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Work</a>
-            <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-full text-sm font-semibold hover:bg-[#4a625a] transition duration-200 text-center">Hire me</a>
+            <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-lg text-sm font-semibold hover:bg-[#4a625a] transition duration-200 text-center">Hire me</a>
           </div>
         </div>
 
