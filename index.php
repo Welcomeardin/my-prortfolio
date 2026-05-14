@@ -910,7 +910,7 @@
     </section>
 
     <!-- ========== CONTACT & CTA SECTION ========== -->
-    <div class="py-24 bg-[#fbfaf8] border-t border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
+    <div class="py-24 border-t border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
       <div class="text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-[#5C4F4A] tracking-tight">Ready to build something impactful?</h2>
         <p class="text-[#5C4F4A]/75 text-lg mt-6 max-w-xl mx-auto">Let’s collaborate on AI automation, open-source tools, or your next digital product.</p>
