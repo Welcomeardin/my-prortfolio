@@ -273,29 +273,25 @@
     .grid-plane {
       position: absolute;
       background-image: 
-        linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
-      background-size: 100px 100px;
-      width: 300%;
-      height: 300%;
-      top: -100%;
-      left: -100%;
+        linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+      background-size: 150px 150px;
+      width: 400%;
+      height: 400%;
+      top: -150%;
+      left: -150%;
     }
 
     .plane-bottom {
       transform: rotateX(90deg) translateZ(400px);
     }
 
-    .plane-top {
-      transform: rotateX(-90deg) translateZ(400px);
-    }
-
     .plane-left {
-      transform: rotateY(90deg) translateZ(600px);
+      transform: rotateY(90deg) translateZ(640px);
     }
 
     .plane-right {
-      transform: rotateY(-90deg) translateZ(600px);
+      transform: rotateY(-90deg) translateZ(640px);
     }
 
     /* Umuzi Style Buttons */
@@ -431,10 +427,9 @@
     </script>
 
     <!-- ========== HERO SECTION: 3D Perspective Grid ========== -->
-    <div class="hero-3d-container">
+    <div class="hero-3d-container -mx-8 md:-mx-16 lg:-mx-20 border-b border-[#C9996B]/20">
       <!-- GRID TUNNEL -->
       <div class="grid-tunnel">
-        <div class="grid-plane plane-top"></div>
         <div class="grid-plane plane-bottom"></div>
         <div class="grid-plane plane-left"></div>
         <div class="grid-plane plane-right"></div>
