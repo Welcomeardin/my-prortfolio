@@ -946,45 +946,45 @@
     </div>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="bg-[#E2E8CE] text-[#5C4F4A] pt-16 pb-8 mt-4 -mx-8 md:-mx-16 lg:-mx-20">
+    <footer class="bg-[#E2E8CE] text-[#262626] pt-16 pb-8 mt-4 -mx-8 md:-mx-16 lg:-mx-20">
       <div class="px-8 md:px-16 lg:px-20">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <!-- brand column -->
           <div class="lg:col-span-1">
             <div class="flex items-center gap-2 mb-4">
-              <div class="w-9 h-9 bg-[#C9996B] rounded-full flex items-center justify-center text-white font-bold text-lg">WA</div>
-              <span class="text-xl font-bold tracking-tight text-[#5C4F4A]">Welcone Ardin</span>
+              <div class="w-9 h-9 bg-[#C9996B] rounded-lg flex items-center justify-center text-white font-bold text-lg">WA</div>
+              <span class="text-xl font-bold tracking-tight text-[#262626]">Welcone Ardin</span>
             </div>
-            <p class="text-[#5C4F4A]/80 text-sm leading-relaxed">
+            <p class="text-[#262626]/80 text-sm leading-relaxed">
               Software engineer & AI product builder. Building useful tools for African languages & communities. OpenClaw core contributor.
             </p>
             <div class="flex gap-4 mt-6">
-              <a href="https://github.com/Welcomeardin" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-github"></i></a>
-              <a href="#" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/arakaza-ardin/" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fas fa-rss"></i></a>
+              <a href="https://github.com/Welcomeardin" class="text-[#262626]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-github"></i></a>
+              <a href="#" class="text-[#262626]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/arakaza-ardin/" class="text-[#262626]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-[#262626]/70 hover:text-[#C9996B] transition text-xl"><i class="fas fa-rss"></i></a>
             </div>
           </div>
 
           <!-- Navigation -->
           <div>
-            <h4 class="font-bold text-[#5C4F4A] text-md mb-4 border-l-4 border-[#C9996B] pl-3">Navigation</h4>
+            <h4 class="font-bold text-[#262626] text-md mb-4 border-l-4 border-[#C9996B] pl-3">Navigation</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Accueil</a></li>
-              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Services</a></li>
-              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Contact</a></li>
-              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Blog / Documents</a></li>
+              <li><a href="#" class="text-[#262626]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Accueil</a></li>
+              <li><a href="#" class="text-[#262626]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Services</a></li>
+              <li><a href="#" class="text-[#262626]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Contact</a></li>
+              <li><a href="#" class="text-[#262626]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Blog / Documents</a></li>
             </ul>
           </div>
 
-          <!-- Space for middle column if needed -->
+          <!-- Space for middle column -->
           <div></div>
 
           <!-- contact + social -->
           <div>
-            <h4 class="font-bold text-[#5C4F4A] text-md mb-4 border-l-4 border-[#C9996B] pl-3">Connect</h4>
-            <p class="text-sm text-[#5C4F4A]/80 flex items-center gap-2 mb-2"><i class="far fa-envelope text-[#C9996B]"></i> welcomeardin@gmail.com</p>
-            <p class="text-sm text-[#5C4F4A]/80 flex items-center gap-2"><i class="fab fa-github-alt"></i> Welcomeardin</p>
+            <h4 class="font-bold text-[#262626] text-md mb-4 border-l-4 border-[#C9996B] pl-3">Connect</h4>
+            <p class="text-sm text-[#262626]/80 flex items-center gap-2 mb-2"><i class="far fa-envelope text-[#C9996B]"></i> welcomeardin@gmail.com</p>
+            <p class="text-sm text-[#262626]/80 flex items-center gap-2"><i class="fab fa-github-alt"></i> Welcomeardin</p>
             <div class="mt-6">
               <a href="#" class="inline-flex items-center gap-2 bg-[#C9996B] px-5 py-2.5 rounded-full text-sm text-white hover:bg-[#C9996B]/80 transition shadow-sm">
                 <i class="fas fa-podcast"></i> subscribe via RSS
@@ -993,12 +993,12 @@
           </div>
         </div>
 
-        <div class="border-t border-[#5C4F4A]/10 mt-14 pt-7 flex flex-col md:flex-row justify-between items-center text-xs text-[#5C4F4A]/60">
+        <div class="border-t border-[#262626]/10 mt-14 pt-7 flex flex-col md:flex-row justify-between items-center text-xs text-[#262626]/60">
           <p>© 2026 Welcone Ardin — Software Engineer & AI Product Builder.</p>
           <div class="flex gap-5 mt-3 md:mt-0">
             <a href="#" class="hover:text-[#C9996B] transition">Privacy</a>
             <a href="#" class="hover:text-[#C9996B] transition">Imprint</a>
-            <a href="#" class="hover:text-[#C9996B] transition">Status</a>
+            <a href="#" class="hover:text-[#262626] transition">Status</a>
           </div>
         </div>
       </div>
