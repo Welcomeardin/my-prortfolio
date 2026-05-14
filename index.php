@@ -798,11 +798,11 @@
           <h2 class="text-3xl md:text-4xl font-bold text-[#5C4F4A] tracking-tight mb-6">My Projects</h2>
         </div>
 
-        <!-- PROJECTS TABLE GRID -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-dashed border-[#C9996B]/30">
+        <!-- PROJECTS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- PROJECT -->
-          <div class="border-r border-b border-dashed border-[#C9996B]/30 bg-white/40 hover:bg-white transition-colors duration-300">
+          <div class="border border-dashed border-[#C9996B]/40 bg-white/40 hover:bg-white transition-all duration-300 rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-1">
             <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
               <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Laravel Web Application">
               <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
@@ -828,7 +828,7 @@
 
           <!-- PROJECT 2: REACT DASHBOARD -->
           <!-- PROJECT -->
-          <div class="border-r border-b border-dashed border-[#C9996B]/30 bg-white/40 hover:bg-white transition-colors duration-300">
+          <div class="border border-dashed border-[#C9996B]/40 bg-white/40 hover:bg-white transition-all duration-300 rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-1">
             <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="React Dashboard">
               <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
@@ -854,7 +854,7 @@
 
           <!-- PROJECT 3: PORTFOLIO WEBSITE -->
           <!-- PROJECT -->
-          <div class="border-r border-b border-dashed border-[#C9996B]/30 bg-white/40 hover:bg-white transition-colors duration-300">
+          <div class="border border-dashed border-[#C9996B]/40 bg-white/40 hover:bg-white transition-all duration-300 rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-1">
             <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
               <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Portfolio Website">
               <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
@@ -880,7 +880,7 @@
 
           <!-- PROJECT 4 CI/CD PIPELINE -->
           <!-- PROJECT -->
-          <div class="border-r border-b border-dashed border-[#C9996B]/30 bg-white/40 hover:bg-white transition-colors duration-300">
+          <div class="border border-dashed border-[#C9996B]/40 bg-white/40 hover:bg-white transition-all duration-300 rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-1">
             <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
               <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="CI/CD Pipeline">
               <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
