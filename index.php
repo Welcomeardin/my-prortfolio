@@ -422,7 +422,7 @@
           <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
           <a href="skills.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Skills</a>
           <a href="work.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Work</a>
-          <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-lg text-sm font-semibold hover:bg-[#4a625a] transition duration-200">Hire me</a>
+          <a href="hire.php" class="px-5 py-2 bg-[#E2E8CE] text-black rounded-lg text-sm font-semibold hover:bg-[#4a625a] transition duration-200">Hire me</a>
         </div>
 
         <!-- MOBILE MENU (Dropdown) -->
@@ -432,7 +432,7 @@
             <a href="about.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">About me</a>
             <a href="skills.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Skills</a>
             <a href="work.php" class="text-[#5C4F4A] hover:text-[#C9996B] transition font-medium text-sm">Work</a>
-            <a href="hire.php" class="px-5 py-2 bg-[#5C766D] text-white rounded-lg text-sm font-semibold hover:bg-[#4a625a] transition duration-200 text-center">Hire me</a>
+            <a href="hire.php" class="px-5 py-2 bg-[#E2E8CE] text-black rounded-lg text-sm font-semibold hover:bg-[#4a625a] transition duration-200 text-center">Hire me</a>
           </div>
         </div>
 
@@ -494,11 +494,11 @@
         </p>
 
         <div class="flex flex-wrap items-center justify-center gap-6 mt-12">
-          <a href="work.php" class="py-3 px-6 bg-[#5C766D] text-white rounded-lg font-semibold hover:bg-[#4a625a] transition duration-200">
+          <a href="work.php" class="py-3 px-6 bg-[#FF7F11] text-white rounded-lg font-semibold hover:bg-[#4a625a] transition duration-200">
             Let's get to work
           </a>
-          <a href="hire.php" class="py-3 px-6 bg-[#5C766D] text-white rounded-lg font-semibold hover:bg-[#4a625a] transition duration-200">
-            Hire me
+          <a href="hire.php" class="py-3 px-6 bg-white text-black rounded-lg font-semibold  transition duration-200">
+            Download CV
           </a>
         </div>
       </div>
