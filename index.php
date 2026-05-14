@@ -436,8 +436,8 @@
 
         <!-- LOGO/BRAND -->
         <div class="flex items-center gap-2 relative z-10">
-          <div class="w-10 h-10 bg-[#ACBFA4] rounded-lg flex items-center justify-center text-white font-bold text-sm">Wa</div>
-          <span class="hidden sm:inline font-bold text-[#5C4F4A] text-sm">Ardin</span>
+          <div class="w-10 h-10 bg-[#ACBFA4] rounded-lg flex items-center justify-center text-white font-bold text-sm">W</div>
+          <em class="hidden sm:inline font-bold text-[#5C4F4A] text-sm">Ardin</em>
         </div>
 
         <!-- HAMBURGER MENU BUTTON (Mobile) -->
