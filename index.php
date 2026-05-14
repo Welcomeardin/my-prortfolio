@@ -910,7 +910,7 @@
     </section>
 
     <!-- ========== CONTACT & CTA SECTION ========== -->
-    <div class="py-24 border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
+    <div class="py-24 bg-[#fbfaf8] border-t border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
       <div class="text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-[#5C4F4A] tracking-tight">Ready to build something impactful?</h2>
         <p class="text-[#5C4F4A]/75 text-lg mt-6 max-w-xl mx-auto">Let’s collaborate on AI automation, open-source tools, or your next digital product.</p>
@@ -945,64 +945,56 @@
       </div>
     </div>
 
-    <!-- ========== FOOTER: based on both designs (Umuzi navigation style + personal branding) ========== -->
-    <footer class="bg-[#5C4F4A] text-[#EDE9E6] pt-16 pb-8 mt-4 -mx-8 md:-mx-16 lg:-mx-20">
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-[#E2E8CE] text-[#5C4F4A] pt-16 pb-8 mt-4 -mx-8 md:-mx-16 lg:-mx-20">
       <div class="px-8 md:px-16 lg:px-20">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <!-- brand column -->
           <div class="lg:col-span-1">
             <div class="flex items-center gap-2 mb-4">
               <div class="w-9 h-9 bg-[#C9996B] rounded-full flex items-center justify-center text-white font-bold text-lg">WA</div>
-              <span class="text-xl font-bold tracking-tight">Welcone Ardin</span>
+              <span class="text-xl font-bold tracking-tight text-[#5C4F4A]">Welcone Ardin</span>
             </div>
-            <p class="text-[#EDE9E6]/80 text-sm leading-relaxed">
+            <p class="text-[#5C4F4A]/80 text-sm leading-relaxed">
               Software engineer & AI product builder. Building useful tools for African languages & communities. OpenClaw core contributor.
             </p>
             <div class="flex gap-4 mt-6">
-              <a href="https://github.com/Welcomeardin" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-github"></i></a>
-              <a href="#" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/arakaza-ardin/" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="text-[#EDE9E6]/70 hover:text-[#C9996B] transition text-xl"><i class="fas fa-rss"></i></a>
+              <a href="https://github.com/Welcomeardin" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-github"></i></a>
+              <a href="#" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/arakaza-ardin/" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-[#5C4F4A]/70 hover:text-[#C9996B] transition text-xl"><i class="fas fa-rss"></i></a>
             </div>
           </div>
 
-          <!-- Navigation (Umuzi style) -->
+          <!-- Navigation -->
           <div>
-            <h4 class="font-bold text-white text-md mb-4 border-l-3 border-[#C9996B] pl-3">Navigation</h4>
+            <h4 class="font-bold text-[#5C4F4A] text-md mb-4 border-l-4 border-[#C9996B] pl-3">Navigation</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Accueil</a></li>
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Services</a></li>
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Contact</a></li>
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Blog / Documents</a></li>
+              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Accueil</a></li>
+              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Services</a></li>
+              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Contact</a></li>
+              <li><a href="#" class="text-[#5C4F4A]/80 hover:text-[#C9996B] transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i>Blog / Documents</a></li>
             </ul>
           </div>
 
-          <!-- resources / posts
-          <div>
-            <h4 class="font-bold text-white text-md mb-4 border-l-3 border-[#C9996B] pl-3">Explore</h4>
-            <ul class="space-y-2 text-sm">
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition">All posts</a></li>
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition">OpenClaw guides</a></li>
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition">AI automation</a></li>
-              <li><a href="#" class="text-[#EDE9E6]/80 hover:text-[#C9996B] transition">RSS feed</a></li>
-            </ul>
-          </div> -->
+          <!-- Space for middle column if needed -->
+          <div></div>
 
-          <!-- contact + social from original -->
+          <!-- contact + social -->
           <div>
-            <h4 class="font-bold text-white text-md mb-4 border-l-3 border-[#C9996B] pl-3">Connect</h4>
-            <p class="text-sm text-[#EDE9E6]/80 flex items-center gap-2 mb-2"><i class="far fa-envelope text-[#C9996B]"></i> welcomeardin@gmail.com</p>
-            <p class="text-sm text-[#EDE9E6]/80 flex items-center gap-2"><i class="fab fa-github-alt"></i> Welcomeardin</p>
+            <h4 class="font-bold text-[#5C4F4A] text-md mb-4 border-l-4 border-[#C9996B] pl-3">Connect</h4>
+            <p class="text-sm text-[#5C4F4A]/80 flex items-center gap-2 mb-2"><i class="far fa-envelope text-[#C9996B]"></i> welcomeardin@gmail.com</p>
+            <p class="text-sm text-[#5C4F4A]/80 flex items-center gap-2"><i class="fab fa-github-alt"></i> Welcomeardin</p>
             <div class="mt-6">
-              <a href="#" class="inline-flex items-center gap-2 bg-[#C9996B]/20 backdrop-blur-sm px-5 py-2.5 rounded-full text-sm text-white border border-[#C9996B]/40 hover:bg-[#C9996B]/40 transition">
+              <a href="#" class="inline-flex items-center gap-2 bg-[#C9996B] px-5 py-2.5 rounded-full text-sm text-white hover:bg-[#C9996B]/80 transition shadow-sm">
                 <i class="fas fa-podcast"></i> subscribe via RSS
               </a>
             </div>
           </div>
         </div>
 
-        <div class="border-t border-[#EDE9E6]/20 mt-14 pt-7 flex flex-col md:flex-row justify-between items-center text-xs text-[#EDE9E6]/60">
-          <p>© 2026 Welcone Ardin — Software Engineer & AI Product Builder. Built with Ardin wel</p>
+        <div class="border-t border-[#5C4F4A]/10 mt-14 pt-7 flex flex-col md:flex-row justify-between items-center text-xs text-[#5C4F4A]/60">
+          <p>© 2026 Welcone Ardin — Software Engineer & AI Product Builder.</p>
           <div class="flex gap-5 mt-3 md:mt-0">
             <a href="#" class="hover:text-[#C9996B] transition">Privacy</a>
             <a href="#" class="hover:text-[#C9996B] transition">Imprint</a>
