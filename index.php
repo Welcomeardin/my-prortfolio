@@ -67,23 +67,29 @@
       }
 
       100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
       }
     }
 
     .marquee-container {
       overflow: hidden;
       width: 100%;
+      position: relative;
     }
 
     .marquee {
       display: flex;
-      animation: marquee 20s linear infinite;
-      white-space: nowrap;
+      width: max-content;
+      animation: marquee 30s linear infinite;
     }
 
     .marquee:hover {
       animation-play-state: paused;
+    }
+
+    .border-dashed-gold {
+      border-top: 1px dashed rgba(201, 153, 107, 0.5);
+      border-bottom: 1px dashed rgba(201, 153, 107, 0.5);
     }
 
     .marquee-item {
@@ -505,7 +511,7 @@
     </div>
 
     <!-- ========== TRUST / CLIENTS SECTION (inspired by "LSI NOUS FONT CONFIANCE" from Umuzi) ========== -->
-    <div class="py-10 border-y border-[#C9996B]/20 bg-white mt-2 -mx-8 md:-mx-16 lg:-mx-20">
+    <div class="py-10 border-dashed-gold bg-white mt-2 -mx-8 md:-mx-16 lg:-mx-20">
       <div class="px-8 md:px-16 lg:px-20 text-center">
         <p class="text-xs uppercase tracking-[0.2em] text-[#5C766D] font-semibold mb-8">Trusted by builders & innovators</p>
 
