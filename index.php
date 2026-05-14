@@ -405,7 +405,7 @@
 
         <!-- LOGO/BRAND -->
         <div class="flex items-center gap-2 relative z-10">
-          <div class="w-10 h-10 bg-[#5C766D] rounded-lg flex items-center justify-center text-white font-bold text-sm"><img src="img/me.jpg" alt=""></div>
+          <div class="w-10 h-10 bg-[#5C766D] rounded-full flex items-center justify-center text-white font-bold text-sm"><img src="img/me.jpg" alt="" class="rounded-full w-10 h-10"></div>
           <span class="hidden sm:inline font-bold text-[#5C4F4A] text-sm">Ardin</span>
         </div>
 
