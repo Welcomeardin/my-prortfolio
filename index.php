@@ -396,6 +396,31 @@
       font-family: "Playfair Display", serif;
       color: #333;
     }
+
+    /* 3D Utilities */
+    .perspective-lg {
+      perspective: 1500px;
+    }
+
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+
+    .hover-3d {
+      transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1);
+    }
+
+    .hover-3d:hover {
+      transform: rotateY(12deg) rotateX(6deg);
+    }
+
+    .translate-z-20 {
+      transform: translateZ(20px);
+    }
+
+    .-translate-z-20 {
+      transform: translateZ(-20px);
+    }
   </style>
 </head>
 
@@ -573,9 +598,17 @@
       </div>
     </div>
 
-    <!-- ========== ABOUT SECTION ========== -->
-    <div class="py-20 lg:py-28 bg-white">
-      <div>
+    <!-- ========== ABOUT SECTION with 3D Background ========== -->
+    <div class="hero-3d-container -mx-8 md:-mx-16 lg:-mx-20 border-y border-[#C9996B]/20 py-20 lg:py-28">
+      <!-- GRID TUNNEL -->
+      <div class="grid-tunnel">
+        <div class="grid-plane plane-top"></div>
+        <div class="grid-plane plane-bottom"></div>
+        <div class="grid-plane plane-left"></div>
+        <div class="grid-plane plane-right"></div>
+      </div>
+
+      <div class="relative z-10 w-full px-8 md:px-16 lg:px-20">
         <!-- section header -->
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-[#C9996B]/30 pb-7 mb-12">
           <div>
@@ -592,7 +625,7 @@
         <section class="py-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Left Column - Text -->
-            <div>
+            <div class="bg-white/40 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/50 shadow-sm">
               <h3 class="text-2xl md:text-3xl font-bold text-[#5C4F4A] mb-4">
                 Designing & Building<br><em class="text-[#C9996B]">Digital Experiences</em>
               </h3>
@@ -630,24 +663,24 @@
                   <span class="text-[#5C4F4A] font-medium text-sm">Brand Integration</span>
                 </div>
               </div>
-
-              <!-- Badges
-              <div class="flex flex-wrap gap-2">
-                <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">TAILWIND CSS</span>
-                <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">REACT</span>
-                <span class="px-4 py-2 bg-[#5C766D]/10 border border-[#5C766D]/20 rounded-full text-xs font-bold text-[#5C766D]">FIGMA</span>
-              </div> -->
             </div>
 
             <!-- Right Column - Image -->
-            <div class="relative">
-              <div class="bg-[#EDE9E6]  overflow-hidden shadow-lg border border-[#C9996B]/10">
-                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80"
-                  class="w-full h-full object-cover"
-                  alt="Web Design and Development">
-              </div>
-              <div class="absolute -bottom-4 -left-4 bg-white border border-[#C9996B]/20 rounded-lg p-4 shadow-lg">
-                <p class="font-bold text-[#5C766D] text-sm">"Design is not just what it looks like."</p>
+            <div class="relative perspective-lg">
+              <div class="relative hover-3d preserve-3d">
+                <div class="bg-[#EDE9E6]/50 backdrop-blur-sm overflow-hidden shadow-2xl border-4 border-white rounded-3xl">
+                  <img src="web_design_cube_concept_1778721529356.png"
+                    class="w-full h-full object-cover"
+                    alt="Web Design Cube Concept">
+                </div>
+                <!-- 3D Decorative elements -->
+                <div class="absolute -bottom-6 -right-6 bg-[#5C766D] text-white p-6 rounded-2xl shadow-xl translate-z-20 hidden md:block border-4 border-white">
+                  <p class="font-bold text-lg">99.9% Focus</p>
+                  <p class="text-xs opacity-80 uppercase tracking-widest">Quality Driven</p>
+                </div>
+                <div class="absolute -top-6 -left-6 bg-white border border-[#C9996B]/20 rounded-2xl p-4 shadow-xl -translate-z-20">
+                  <p class="font-bold text-[#5C766D] text-sm">"Design is not just what it looks like."</p>
+                </div>
               </div>
             </div>
           </div>
