@@ -536,7 +536,7 @@
     </div>
 
     <!-- ========== TRUST / CLIENTS SECTION (inspired by "LSI NOUS FONT CONFIANCE" from Umuzi) ========== -->
-    <div class="py-10 border-dashed-gold bg-white mt-2 -mx-8 md:-mx-16 lg:-mx-20">
+    <div class="py-10 border-dashed-gold bg-white mt-10 -mx-8 md:-mx-16 lg:-mx-20">
       <div class="px-8 md:px-16 lg:px-20 text-center">
         <p class="text-xs uppercase tracking-[0.2em] text-[#5C766D] font-semibold mb-8">Trusted by builders & innovators</p>
 
