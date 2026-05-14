@@ -660,19 +660,11 @@
             <!-- Right Column - Image Cell -->
             <div class="border-r border-b border-dashed border-[#C9996B]/30 bg-white p-6 md:p-12 flex items-center justify-center overflow-hidden">
               <div class="relative perspective-lg w-full">
-                <div class="relative hover-3d preserve-3d">
-                  <div class="bg-[#EDE9E6]/50 backdrop-blur-sm overflow-hidden shadow-2xl border-4 border-white rounded-3xl">
+                <div class="relative">
+                  <div class=" overflow-hidden ">
                     <img src="img/me.jpg"
                       class="w-full h-full object-cover"
                       alt="Web Design Cube Concept">
-                  </div>
-                  <!-- 3D Decorative elements
-                  <div class="absolute -bottom-6 -right-6 bg-[#5C766D] text-white p-6 rounded-2xl shadow-xl translate-z-20 hidden md:block border-4 border-white">
-                    <p class="font-bold text-lg">99.9% Focus</p>
-                    <p class="text-xs opacity-80 uppercase tracking-widest">Quality Driven</p>
-                  </div> -->
-                  <div class="absolute -top-6 -left-6 bg-white border border-[#C9996B]/20 rounded-2xl p-4 shadow-xl -translate-z-20">
-                    <p class="font-bold text-[#5C766D] text-sm">"Design is not just what it looks like."</p>
                   </div>
                 </div>
               </div>
