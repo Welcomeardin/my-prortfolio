@@ -598,17 +598,9 @@
       </div>
     </div>
 
-    <!-- ========== ABOUT SECTION with 3D Background ========== -->
-    <div class="hero-3d-container -mx-8 md:-mx-16 lg:-mx-20 border-y border-[#C9996B]/20 py-20 lg:py-28">
-      <!-- GRID TUNNEL -->
-      <div class="grid-tunnel">
-        <div class="grid-plane plane-top"></div>
-        <div class="grid-plane plane-bottom"></div>
-        <div class="grid-plane plane-left"></div>
-        <div class="grid-plane plane-right"></div>
-      </div>
-
-      <div class="relative z-10 w-full px-8 md:px-16 lg:px-20">
+    <!-- ========== ABOUT SECTION ========== -->
+    <div class="bg-[#fbfaf8] border-t border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 py-20 lg:py-28">
+      <div class="w-full px-8 md:px-16 lg:px-20">
         <!-- section header -->
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-[#C9996B]/30 pb-7 mb-12">
           <div>
