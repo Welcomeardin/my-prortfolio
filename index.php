@@ -248,64 +248,110 @@
       margin-left: 0.5rem;
     }
 
-    /* Brick Wall Styles */
-    .brick-wall {
+    /* 3D Perspective Grid Styles */
+    .hero-3d-container {
+      perspective: 1200px;
+      position: relative;
+      background: #ffffff;
+      overflow: hidden;
+      min-height: 80vh;
       display: flex;
-      flex-direction: column;
-      gap: 5px;
-      width: 100%;
+      align-items: center;
+      justify-content: center;
     }
 
-    .brick-row {
-      display: flex;
-      gap: 5px;
-    }
-
-    .brick {
-      height: 16px;
-      background-color: #5C4F4A;
-      opacity: 0.1;
-      border-radius: 1px;
-      flex: 1;
-      transition: opacity 0.3s ease;
-    }
-
-    .brick:hover {
-      opacity: 0.3;
-    }
-
-    .brick-row:nth-child(even) {
-      padding-right: 12px;
-    }
-    
-    .brick-row:nth-child(odd) {
-      padding-left: 12px;
-    }
-
-    /* Sand Texture Styles */
-    .sand-bottom {
+    .grid-tunnel {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       width: 100%;
-      height: 100px;
+      height: 100%;
+      transform-style: preserve-3d;
       pointer-events: none;
-      background-image: radial-gradient(#C9996B 1.5px, transparent 1.5px);
-      background-size: 6px 6px;
-      opacity: 0.15;
-      mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
-      -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
     }
 
-    .sand-wave {
+    .grid-plane {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 40px;
-      background: #C9996B;
-      opacity: 0.05;
-      clip-path: polygon(0 100%, 100% 100%, 100% 0, 85% 40%, 70% 10%, 55% 45%, 40% 15%, 25% 40%, 10% 5%, 0 35%);
+      background-image: 
+        linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+      background-size: 100px 100px;
+      width: 300%;
+      height: 300%;
+      top: -100%;
+      left: -100%;
+    }
+
+    .plane-bottom {
+      transform: rotateX(90deg) translateZ(400px);
+    }
+
+    .plane-top {
+      transform: rotateX(-90deg) translateZ(400px);
+    }
+
+    .plane-left {
+      transform: rotateY(90deg) translateZ(600px);
+    }
+
+    .plane-right {
+      transform: rotateY(-90deg) translateZ(600px);
+    }
+
+    /* Umuzi Style Buttons */
+    .btn-umuzi-primary {
+      background-color: #FF6B00;
+      color: white;
+      padding: 1.1rem 2.8rem;
+      border-radius: 12px;
+      font-weight: 800;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.4);
+      display: inline-block;
+    }
+
+    .btn-umuzi-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px -5px rgba(255, 107, 0, 0.5);
+      filter: brightness(1.1);
+    }
+
+    .btn-umuzi-secondary {
+      background-color: white;
+      color: #1a1a1a;
+      padding: 1.1rem 2.8rem;
+      border-radius: 12px;
+      font-weight: 800;
+      border: 1px solid rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: inline-block;
+    }
+
+    .btn-umuzi-secondary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-color: rgba(0,0,0,0.3);
+    }
+
+    .hero-title {
+      font-family: 'Century Gothic', sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      line-height: 1.05;
+      color: #1a1a1a;
+      font-size: 5.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 3.5rem; }
+    }
+
+    .hero-title em {
+      font-style: italic;
+      font-weight: 400;
+      font-family: "Playfair Display", serif;
+      color: #333;
     }
   </style>
 </head>
@@ -384,74 +430,35 @@
       });
     </script>
 
-    <!-- ========== HERO SECTION: Centered with Brick Walls & Sand Bottom ========== -->
-    <div class="flex flex-col lg:flex-row w-full relative items-center justify-between gap-8 py-20 lg:py-32 overflow-hidden">
-      
-      <!-- LEFT BRICK WALL -->
-      <div class="hidden lg:flex lg:w-1/6 justify-start opacity-30">
-        <div class="brick-wall">
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-        </div>
+    <!-- ========== HERO SECTION: 3D Perspective Grid ========== -->
+    <div class="hero-3d-container">
+      <!-- GRID TUNNEL -->
+      <div class="grid-tunnel">
+        <div class="grid-plane plane-top"></div>
+        <div class="grid-plane plane-bottom"></div>
+        <div class="grid-plane plane-left"></div>
+        <div class="grid-plane plane-right"></div>
       </div>
 
-      <!-- CENTER TEXT SECTION -->
-      <div class="flex-1 w-full px-4 md:px-8 flex flex-col items-center text-center relative z-10">
-        <div class="max-w-3xl mx-auto">
-          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#5C4F4A] leading-none mb-4 whitespace-nowrap">
-            Welcome Ardin
-          </h1>
+      <!-- CENTER CONTENT -->
+      <div class="relative z-10 text-center px-6">
+        <h1 class="hero-title">
+          Welcome <em>Ardin</em>
+        </h1>
+        <p class="text-[#5C4F4A]/60 text-lg md:text-xl mt-8 max-w-2xl mx-auto leading-relaxed font-medium">
+          Creating beautiful and functional websites for clients around the world. <br class="hidden md:block">
+          Documenting my journey with OpenClaw — where AI meets practical automation.
+        </p>
 
-          <div class="flex flex-col items-center gap-2 mb-8">
-            <p class="text-xl md:text-2xl text-[#C9996B] font-bold tracking-widest uppercase">
-              Web Designer & Developer
-            </p>
-            <div class="w-16 h-1 bg-[#5C766D]/40 rounded-full"></div>
-          </div>
-
-          <p class="text-[#5C4F4A]/70 text-lg md:text-xl leading-relaxed max-w-xl mx-auto font-medium">
-            Creating beautiful and functional websites for clients around the world. Documenting my journey with <span class="text-[#5C766D] font-bold">OpenClaw</span> — where AI meets practical automation.
-          </p>
-
-          <div class="flex flex-wrap items-center justify-center gap-5 mt-10">
-            <a href="work.php" class="group inline-flex items-center gap-3 px-8 py-3.5 bg-[#5C766D] text-white font-bold rounded-full shadow-lg hover:bg-[#4a625a] hover:translate-y-[-2px] transition-all duration-300">
-              Explore work <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition"></i>
-            </a>
-            <a href="https://github.com/Welcomeardin" class="inline-flex items-center gap-3 px-8 py-3.5 bg-white text-[#5C4F4A] font-bold rounded-full border-2 border-[#C9996B]/20 hover:border-[#C9996B] hover:shadow-md transition-all duration-300">
-              <i class="fab fa-github text-xl"></i> GitHub
-            </a>
-          </div>
+        <div class="flex flex-wrap items-center justify-center gap-6 mt-12">
+          <a href="work.php" class="btn-umuzi-primary">
+            Demander un devis
+          </a>
+          <a href="hire.php" class="btn-umuzi-secondary">
+            Réserver un appel
+          </a>
         </div>
       </div>
-
-      <!-- RIGHT BRICK WALL -->
-      <div class="hidden lg:flex lg:w-1/6 justify-end opacity-30">
-        <div class="brick-wall">
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div><div class="brick"></div></div>
-          <div class="brick-row"><div class="brick"></div><div class="brick"></div></div>
-        </div>
-      </div>
-
-      <!-- SAND BOTTOM DECORATION -->
-      <div class="sand-bottom"></div>
-      <div class="sand-wave"></div>
-
     </div>
 
     <!-- ========== TRUST / CLIENTS SECTION (inspired by "LSI NOUS FONT CONFIANCE" from Umuzi) ========== -->
