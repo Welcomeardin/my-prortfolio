@@ -349,6 +349,15 @@
       font-family: "Playfair Display", serif;
       color: #333;
     }
+
+    @keyframes emergeFromTunnel {
+      0% { transform: scale(0.9) translateY(20px); opacity: 0; }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
+    }
+
+    .animate-emerge {
+      animation: emergeFromTunnel 1.5s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+    }
   </style>
 </head>
 
@@ -436,7 +445,7 @@
       </div>
 
       <!-- CENTER CONTENT -->
-      <div class="relative z-10 text-center px-6">
+      <div class="relative z-10 text-center px-6 animate-emerge">
         <h1 class="hero-title">
           Welcome <em>Ardin</em>
         </h1>
