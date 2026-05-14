@@ -681,7 +681,7 @@
     </div>
 
     <!-- ========== SKILLS SECTION ========== -->
-    <div class="py-20 lg:py-28 bg-white border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
+    <div class="py-20 lg:py-28 bg-[#fbfaf8] border-y border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
       <div>
         <!-- Dashed line separator -->
         <div class="flex items-center justify-center">
@@ -789,7 +789,7 @@
     </div>
 
     <!-- PROJECTS -->
-    <section id="projects" class="border-t border-[#C9996B]/30 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10">
+    <section id="projects" class="bg-[#fbfaf8] border-y border-dashed border-[#C9996B]/40 -mx-8 md:-mx-16 lg:-mx-20 px-8 md:px-16 lg:px-20 mt-10 py-20 lg:py-28">
       <div style="max-width:1100px;margin:0 auto;">
         <div style="text-align:center;margin-top:3.5rem;">
           <p class="px-6 text-[#5C766D] font-bold text-sm uppercase tracking-wider">
@@ -802,7 +802,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           <!-- PROJECT 1: LARAVEL WEB APP -->
-          <div class="card">
+          <div class="card border border-[#C9996B]/20 bg-white rounded-2xl overflow-hidden shadow-sm">
             <div style="background:#fff;height:220px;position:relative;overflow:hidden;">
               <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Laravel Web Application">
               <div style="position:absolute;bottom:0.75rem;left:0.75rem;display:flex;gap:0.4rem;">
